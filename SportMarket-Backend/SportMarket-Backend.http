@@ -1,0 +1,6 @@
+@SportMarket_Backend_HostAddress = http://localhost:5242
+
+GET {{SportMarket_Backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
