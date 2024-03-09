@@ -2,7 +2,7 @@
 
 namespace SportMarket_Backend.Models.DTO
 {
-    public class AddProductRequestDTO
+    public class UpdateProductRequestDTO
     {
         [Required]
         [MinLength(6, ErrorMessage = "Product name should have at least 6 characters.")]

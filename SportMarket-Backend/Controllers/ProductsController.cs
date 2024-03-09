@@ -12,20 +12,18 @@ namespace SportMarket_Backend.Controllers
     public class ProductsController : ControllerBase
     {
         private readonly IProductRepository _productRepository;
-        private readonly SportMarketDBContext _dbContext;
         private readonly IMapper _mapper;
 
-        public ProductsController(IProductRepository productRepository, SportMarketDBContext dbContext, IMapper mapper)
+        public ProductsController(IProductRepository productRepository, IMapper mapper)
         {
             _productRepository = productRepository;
-            _dbContext = dbContext;
             _mapper = mapper;
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] string? filterOn, string? filterQuery)
         {
-            var productsDomain = await _productRepository.GetAllAsync();
+            var productsDomain = await _productRepository.GetAllAsync(filterOn, filterQuery);
             var productsDTO = _mapper.Map<List<ProductDTO>>(productsDomain);
 
             return Ok(productsDTO);
@@ -57,5 +55,37 @@ namespace SportMarket_Backend.Controllers
             return Ok(productDTO);
         }
 
+
+        [HttpDelete]
+        [Route("{id:guid}")]
+        public async Task<IActionResult> Delete([FromRoute] Guid id)
+        {
+            var deletedProductDomain = await _productRepository.DeleteAsync(id);
+            if (deletedProductDomain == null)
+            {
+                return NotFound();
+            }
+            var deletedProductDTO = _mapper.Map<ProductDTO>(deletedProductDomain);
+
+            return Ok(deletedProductDTO);
+        }
+
+        [HttpPut]
+        [Route("{id:guid}")]
+        public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateProductRequestDTO updateProductRequestDTO)
+        {
+            var productDomainModel = _mapper.Map<Product>(updateProductRequestDTO);
+
+            productDomainModel = await _productRepository.UpdateAsync(id, productDomainModel);
+
+            if(productDomainModel == null)
+            {
+                return NotFound();
+            }
+
+            var productDTO = _mapper.Map<ProductDTO>(productDomainModel);
+
+            return Ok(productDTO);
+        }
     }
 }

@@ -1,4 +1,8 @@
-﻿namespace SportMarket_Backend.Models.Domain
+﻿
+
+using SportMarket_Backend.Models.DTO;
+
+namespace SportMarket_Backend.Models.Domain
 {
     public class User
     {
@@ -6,8 +10,9 @@
         public string Username { get; set; }
         public string Email { get; set; }
         public int RankPoints { get; set; }
-        public string? RankName { get; set; }
-        public ICollection<Product> Products { get; set; }
+        public Guid RankNameId { get; set; }
+        public RankName RankName { get; set; }
+        public ICollection<ProductDTO> Products { get; set; } = new List<ProductDTO>();
 
     }
 }

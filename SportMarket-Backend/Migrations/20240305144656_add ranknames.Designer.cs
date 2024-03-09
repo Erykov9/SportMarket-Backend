@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SportMarket_Backend.Data;
 
@@ -11,9 +12,11 @@ using SportMarket_Backend.Data;
 namespace SportMarket_Backend.Migrations
 {
     [DbContext(typeof(SportMarketDBContext))]
-    partial class SportMarketDBContextModelSnapshot : ModelSnapshot
+    [Migration("20240305144656_add ranknames")]
+    partial class addranknames
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -183,7 +186,7 @@ namespace SportMarket_Backend.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("6ed860b5-cd90-4e3b-bad4-ce889b520553"),
+                            Id = new Guid("f6368858-df8e-4030-b69c-b59500636ebe"),
                             CategoryId = new Guid("a3067d1f-1870-4afa-b45d-f39f0ed1d91e"),
                             ProductDescription = "A high-quality, adjustable weight dumbbell set for all your strength training needs.",
                             ProductName = "Professional Dumbbell Set",
@@ -192,7 +195,7 @@ namespace SportMarket_Backend.Migrations
                         },
                         new
                         {
-                            Id = new Guid("5b57fc16-f488-4893-a7e2-5c1055429ba6"),
+                            Id = new Guid("90fb634f-0b5b-4767-8a12-20c89e0170b4"),
                             CategoryId = new Guid("a3067d1f-1870-4afa-b45d-f39f0ed1d91e"),
                             ProductDescription = "Eco-friendly, non-slip yoga mat designed for ultimate comfort and stability.",
                             ProductName = "Premium Yoga Mat",
@@ -201,7 +204,7 @@ namespace SportMarket_Backend.Migrations
                         },
                         new
                         {
-                            Id = new Guid("8e65738b-9723-4dcb-ab88-1d8af22d911e"),
+                            Id = new Guid("3a405629-15ec-4c4a-9091-6e473ea0280d"),
                             CategoryId = new Guid("9d89386d-8fe2-4b04-9138-c40b5f4b9e0f"),
                             ProductDescription = "Ergonomically designed handle to improve grip strength and arm wrestling techniques.",
                             ProductName = "Armwrestling Training Handle",
@@ -210,7 +213,7 @@ namespace SportMarket_Backend.Migrations
                         },
                         new
                         {
-                            Id = new Guid("3a7eb8ce-b0d4-4150-b49b-58354ad7963f"),
+                            Id = new Guid("1f3336a3-7f28-42ea-80ae-30409fa381ae"),
                             CategoryId = new Guid("9d89386d-8fe2-4b04-9138-c40b5f4b9e0f"),
                             ProductDescription = "Competition-grade armwrestling table with adjustable height and padded surfaces.",
                             ProductName = "Professional Armwrestling Table",
@@ -219,7 +222,7 @@ namespace SportMarket_Backend.Migrations
                         },
                         new
                         {
-                            Id = new Guid("26788bb7-7423-46fd-98c7-4c881e29107a"),
+                            Id = new Guid("e293c753-839f-4a5b-aa30-a5420921ffe1"),
                             CategoryId = new Guid("f5956c45-74bc-4e06-8bcc-935c8579d1af"),
                             ProductDescription = "Durable, wall-mounted pull-up bar for various bodyweight exercises.",
                             ProductName = "Calisthenics Pull-Up Bar",
@@ -228,7 +231,7 @@ namespace SportMarket_Backend.Migrations
                         },
                         new
                         {
-                            Id = new Guid("6c4fc9e4-00f8-46a8-8e97-0151af484c8a"),
+                            Id = new Guid("7ba75622-5211-4909-afaf-86b962d936f7"),
                             CategoryId = new Guid("f5956c45-74bc-4e06-8bcc-935c8579d1af"),
                             ProductDescription = "Lightweight, yet sturdy parallettes for calisthenics training on the go.",
                             ProductName = "Portable Parallettes",
@@ -237,7 +240,7 @@ namespace SportMarket_Backend.Migrations
                         },
                         new
                         {
-                            Id = new Guid("7932c9af-1dc8-4f6e-b15b-fdc9e399e550"),
+                            Id = new Guid("4bc8a2ab-e530-4430-9fa1-5812f15edc50"),
                             CategoryId = new Guid("dab3ad41-dd26-4448-9442-e3418c5dc771"),
                             ProductDescription = "Highly protective and comfortable helmet for mountain biking enthusiasts.",
                             ProductName = "Mountain Bike Helmet",
@@ -246,7 +249,7 @@ namespace SportMarket_Backend.Migrations
                         },
                         new
                         {
-                            Id = new Guid("1185c131-f821-4f56-9bb2-81028ab0a25b"),
+                            Id = new Guid("422613b8-434e-449e-8512-1f73590b2679"),
                             CategoryId = new Guid("dab3ad41-dd26-4448-9442-e3418c5dc771"),
                             ProductDescription = "Breathable, shock-absorbing gloves for enhanced grip and comfort during long rides.",
                             ProductName = "Performance Cycling Gloves",
@@ -255,7 +258,7 @@ namespace SportMarket_Backend.Migrations
                         },
                         new
                         {
-                            Id = new Guid("632a1f91-1ce8-4be5-a441-5362a7b51809"),
+                            Id = new Guid("b873b28c-caa6-4be9-a83c-ccdf96e3d935"),
                             CategoryId = new Guid("66eaede8-5121-46cd-896d-e8f76ed1b8c0"),
                             ProductDescription = "Versatile snowboard designed for all levels of snowboarding, offering stability and control.",
                             ProductName = "All-Mountain Snowboard",
@@ -264,7 +267,7 @@ namespace SportMarket_Backend.Migrations
                         },
                         new
                         {
-                            Id = new Guid("ab6d886e-78b1-4ad9-9517-2645d40b19a9"),
+                            Id = new Guid("c0ff43d9-21bc-4e56-824d-c8975e50daef"),
                             CategoryId = new Guid("66eaede8-5121-46cd-896d-e8f76ed1b8c0"),
                             ProductDescription = "Waterproof and windproof jacket with thermal insulation to keep you warm on the slopes.",
                             ProductName = "Thermal Snowboard Jacket",
@@ -273,7 +276,7 @@ namespace SportMarket_Backend.Migrations
                         },
                         new
                         {
-                            Id = new Guid("79c0898c-ffdd-4bbc-82da-0b4472c148c6"),
+                            Id = new Guid("b5779ef4-153f-45e2-98d9-ff49e0e06112"),
                             CategoryId = new Guid("349cec4a-38d7-451b-802b-cef4ce0f2909"),
                             ProductDescription = "Lightweight, durable running shoes with exceptional cushioning for long-distance runs.",
                             ProductName = "High-Performance Running Shoes",
@@ -282,7 +285,7 @@ namespace SportMarket_Backend.Migrations
                         },
                         new
                         {
-                            Id = new Guid("61459ff4-9c6c-43ed-bafb-876cb8b59bd6"),
+                            Id = new Guid("c3d4e6b0-ddf1-4079-b733-98ab947ed407"),
                             CategoryId = new Guid("349cec4a-38d7-451b-802b-cef4ce0f2909"),
                             ProductDescription = "High-visibility vest for safe running during early mornings or late evenings.",
                             ProductName = "Reflective Running Vest",
@@ -291,7 +294,7 @@ namespace SportMarket_Backend.Migrations
                         },
                         new
                         {
-                            Id = new Guid("6854046c-fe8c-43d1-9359-dc84bcc27522"),
+                            Id = new Guid("93ef7389-62ab-4188-9345-d0f458d50137"),
                             CategoryId = new Guid("e70f2319-cf3e-4384-bd8e-101e23d9d8c3"),
                             ProductDescription = "Traditional, durable karate uniform made from high-quality fabric for training and competitions.",
                             ProductName = "Karate Gi",
@@ -300,7 +303,7 @@ namespace SportMarket_Backend.Migrations
                         },
                         new
                         {
-                            Id = new Guid("13a86834-ec1e-46e3-94ab-dba9edb71005"),
+                            Id = new Guid("bdd9d5de-ca13-43fc-9532-ff5cd7e66472"),
                             CategoryId = new Guid("e70f2319-cf3e-4384-bd8e-101e23d9d8c3"),
                             ProductDescription = "Premium leather boxing gloves designed for maximum protection and performance.",
                             ProductName = "Boxing Gloves",
