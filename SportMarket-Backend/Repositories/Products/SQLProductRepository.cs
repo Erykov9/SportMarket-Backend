@@ -37,41 +37,45 @@ namespace SportMarket_Backend.Repositories.Products
 
         public async Task<List<Product>> GetAllAsync(
             string? filterOn, string? filterQuery,
-            string? sortBy, bool isAscending)
+            string? sortBy, bool isAscending,
+            int pageNumber = 1, int pageSize = 10)
         {
 
             var products = _dBContext.Products.Include(x => x.Category).Include(p => p.User).AsQueryable();
-            
-            if(!string.IsNullOrWhiteSpace(filterOn) && !string.IsNullOrWhiteSpace(filterQuery))
+
+            if (!string.IsNullOrWhiteSpace(filterOn) && !string.IsNullOrWhiteSpace(filterQuery))
             {
-                if(filterOn.Equals("ProductName", StringComparison.OrdinalIgnoreCase))
+                if (filterOn.Equals("ProductName", StringComparison.OrdinalIgnoreCase))
                 {
                     products = products.Where(x => x.ProductName.Contains(filterQuery));
                 }
-                else if(filterOn.Equals("ProductDescription", StringComparison.OrdinalIgnoreCase))
+                else if (filterOn.Equals("ProductDescription", StringComparison.OrdinalIgnoreCase))
                 {
                     products = products.Where(x => x.ProductDescription.Contains(filterQuery));
                 }
-             
+
             }
 
-            if(!string.IsNullOrWhiteSpace(sortBy))
+            if (!string.IsNullOrWhiteSpace(sortBy))
             {
                 if (sortBy.Equals("ProductName", StringComparison.OrdinalIgnoreCase))
                 {
                     products = isAscending ? products.OrderBy(x => x.ProductName) : products.OrderByDescending(x => x.ProductName);
                 }
-                else if(sortBy.Equals("ProductPrice", StringComparison.OrdinalIgnoreCase))
+                else if (sortBy.Equals("ProductPrice", StringComparison.OrdinalIgnoreCase))
                 {
                     products = isAscending ? products.OrderBy(x => x.ProductPrice) : products.OrderByDescending(x => x.ProductPrice);
                 }
-                else if(sortBy.Equals("ProductCategory", StringComparison.OrdinalIgnoreCase))
+                else if (sortBy.Equals("ProductCategory", StringComparison.OrdinalIgnoreCase))
                 {
                     products = isAscending ? products.OrderBy(x => x.Category.CategoryName) : products.OrderByDescending(x => x.Category.CategoryName);
                 }
             }
 
-            return await products.ToListAsync();
+            var skipResults = (pageNumber - 1) * pageSize;
+
+
+            return await products.Skip(skipResults).Take(pageSize).ToListAsync();
         }
 
         public async Task<Product> GetByIdAsync(Guid id)
