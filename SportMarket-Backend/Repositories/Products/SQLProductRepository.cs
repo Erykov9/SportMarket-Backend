@@ -35,7 +35,9 @@ namespace SportMarket_Backend.Repositories.Products
             return product;
         }
 
-        public async Task<List<Product>> GetAllAsync(string? filterOn, string? filterQuery)
+        public async Task<List<Product>> GetAllAsync(
+            string? filterOn, string? filterQuery,
+            string? sortBy, bool isAscending)
         {
 
             var products = _dBContext.Products.Include(x => x.Category).Include(p => p.User).AsQueryable();
@@ -46,12 +48,27 @@ namespace SportMarket_Backend.Repositories.Products
                 {
                     products = products.Where(x => x.ProductName.Contains(filterQuery));
                 }
-
-                if(filterOn.Equals("ProductDescription", StringComparison.OrdinalIgnoreCase))
+                else if(filterOn.Equals("ProductDescription", StringComparison.OrdinalIgnoreCase))
                 {
                     products = products.Where(x => x.ProductDescription.Contains(filterQuery));
                 }
              
+            }
+
+            if(!string.IsNullOrWhiteSpace(sortBy))
+            {
+                if (sortBy.Equals("ProductName", StringComparison.OrdinalIgnoreCase))
+                {
+                    products = isAscending ? products.OrderBy(x => x.ProductName) : products.OrderByDescending(x => x.ProductName);
+                }
+                else if(sortBy.Equals("ProductPrice", StringComparison.OrdinalIgnoreCase))
+                {
+                    products = isAscending ? products.OrderBy(x => x.ProductPrice) : products.OrderByDescending(x => x.ProductPrice);
+                }
+                else if(sortBy.Equals("ProductCategory", StringComparison.OrdinalIgnoreCase))
+                {
+                    products = isAscending ? products.OrderBy(x => x.Category.CategoryName) : products.OrderByDescending(x => x.Category.CategoryName);
+                }
             }
 
             return await products.ToListAsync();
