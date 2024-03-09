@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SportMarket_Backend.Data;
 
@@ -11,9 +12,11 @@ using SportMarket_Backend.Data;
 namespace SportMarket_Backend.Migrations
 {
     [DbContext(typeof(SportMarketDBContext))]
-    partial class SportMarketDBContextModelSnapshot : ModelSnapshot
+    [Migration("20240309145810_fix for ProductDTO v2")]
+    partial class fixforProductDTOv2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
