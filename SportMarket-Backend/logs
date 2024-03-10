@@ -1,0 +1,180 @@
+2024-03-09 23:33:20.610 +01:00 [INF] User profile is available. Using 'C:\Users\szcze\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-09 23:33:20.793 +01:00 [INF] Now listening on: https://localhost:8000
+2024-03-09 23:33:20.793 +01:00 [INF] Now listening on: http://localhost:8001
+2024-03-09 23:33:20.816 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-09 23:33:20.817 +01:00 [INF] Hosting environment: Development
+2024-03-09 23:33:20.817 +01:00 [INF] Content root path: D:\Programowanie\SportMarket-Backend\SportMarket-Backend
+2024-03-09 23:33:21.329 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/index.html - null null
+2024-03-09 23:33:21.427 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/index.html - 200 null text/html;charset=utf-8 100.9017ms
+2024-03-09 23:33:21.430 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-09 23:33:21.431 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_vs/browserLink - null null
+2024-03-09 23:33:21.438 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 7.2615ms
+2024-03-09 23:33:21.455 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.5374ms
+2024-03-09 23:33:21.480 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - null null
+2024-03-09 23:33:21.537 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.2178ms
+2024-03-09 23:33:28.502 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/Products?isAscending=true&pageNumber=1&pageSize=10 - null null
+2024-03-09 23:33:28.540 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-03-09 23:33:28.542 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-09 23:33:28.542 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/Products?isAscending=true&pageNumber=1&pageSize=10 - 401 0 null 40.1035ms
+2024-03-09 23:33:40.498 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8000/api/Products?filterOn=productname&filterQuery=&sortBy=productcategory&isAscending=true - null null
+2024-03-09 23:33:40.529 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '3/9/2024 10:17:17 PM', Current time (UTC): '3/9/2024 10:33:40 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-03-09 23:33:40.587 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '3/9/2024 10:17:17 PM', Current time (UTC): '3/9/2024 10:33:40 PM'.
+2024-03-09 23:33:40.588 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-03-09 23:33:40.589 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-09 23:33:40.594 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8000/api/Products?filterOn=productname&filterQuery=&sortBy=productcategory&isAscending=true - 401 0 null 95.7159ms
+2024-03-09 23:33:45.546 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8000/api/auth/login - application/json 63
+2024-03-09 23:33:45.558 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.AuthController.Login (SportMarket-Backend)'
+2024-03-09 23:33:45.573 +01:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SportMarket_Backend.Models.DTO.LoginRequestDTO) on controller SportMarket_Backend.Controllers.AuthController (SportMarket-Backend).
+2024-03-09 23:33:46.295 +01:00 [INF] Executed DbCommand (33ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-03-09 23:33:46.413 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-03-09 23:33:46.422 +01:00 [INF] Executing OkObjectResult, writing value of type 'SportMarket_Backend.Models.DTO.LoginResponseDTO'.
+2024-03-09 23:33:46.425 +01:00 [INF] Executed action SportMarket_Backend.Controllers.AuthController.Login (SportMarket-Backend) in 849.7798ms
+2024-03-09 23:33:46.426 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.AuthController.Login (SportMarket-Backend)'
+2024-03-09 23:33:46.431 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8000/api/auth/login - 200 null application/json; charset=utf-8 885.1156ms
+2024-03-09 23:33:53.749 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8000/api/Products?filterOn=productname&filterQuery=&sortBy=productcategory&isAscending=true - null null
+2024-03-09 23:33:53.756 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-09 23:33:53.760 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-09 23:33:54.002 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [t].[Id0], [t].[CategoryName], [u].[Id], [u].[Email], [u].[RankNameId], [u].[RankPoints], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId], [c].[Id] AS [Id0], [c].[CategoryName]
+    FROM [Products] AS [p]
+    INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+    ORDER BY [c].[CategoryName]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+ORDER BY [t].[CategoryName]
+2024-03-09 23:33:54.037 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-09 23:33:54.048 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 287.2232ms
+2024-03-09 23:33:54.049 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-09 23:33:54.050 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8000/api/Products?filterOn=productname&filterQuery=&sortBy=productcategory&isAscending=true - 200 null application/json; charset=utf-8 300.5241ms
+2024-03-10 01:36:59.646 +01:00 [INF] User profile is available. Using 'C:\Users\szcze\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-10 01:36:59.778 +01:00 [INF] Now listening on: https://localhost:8000
+2024-03-10 01:36:59.779 +01:00 [INF] Now listening on: http://localhost:8001
+2024-03-10 01:36:59.807 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-10 01:36:59.808 +01:00 [INF] Hosting environment: Development
+2024-03-10 01:36:59.809 +01:00 [INF] Content root path: D:\Programowanie\SportMarket-Backend\SportMarket-Backend
+2024-03-10 01:37:00.462 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/index.html - null null
+2024-03-10 01:37:00.555 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/index.html - 200 null text/html;charset=utf-8 96.1964ms
+2024-03-10 01:37:00.557 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-10 01:37:00.557 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_vs/browserLink - null null
+2024-03-10 01:37:00.560 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 2.9906ms
+2024-03-10 01:37:00.577 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.8181ms
+2024-03-10 01:37:00.606 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - null null
+2024-03-10 01:37:00.657 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 51.293ms
+2024-03-10 01:37:06.649 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8000/api/auth/register - application/json 119
+2024-03-10 01:37:06.683 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.AuthController.Register (SportMarket-Backend)'
+2024-03-10 01:37:06.695 +01:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(SportMarket_Backend.Models.DTO.RegisterRequestDTO) on controller SportMarket_Backend.Controllers.AuthController (SportMarket-Backend).
+2024-03-10 01:37:07.464 +01:00 [INF] Executed DbCommand (29ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-03-10 01:37:07.518 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-03-10 01:37:07.522 +01:00 [INF] Executed action SportMarket_Backend.Controllers.AuthController.Register (SportMarket-Backend) in 824.6354ms
+2024-03-10 01:37:07.523 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.AuthController.Register (SportMarket-Backend)'
+2024-03-10 01:37:07.527 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8000/api/auth/register - 400 null text/plain; charset=utf-8 878.8665ms
+2024-03-10 01:37:23.771 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8000/api/auth/register - application/json 119
+2024-03-10 01:37:23.774 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.AuthController.Register (SportMarket-Backend)'
+2024-03-10 01:37:23.775 +01:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(SportMarket_Backend.Models.DTO.RegisterRequestDTO) on controller SportMarket_Backend.Controllers.AuthController (SportMarket-Backend).
+2024-03-10 01:37:23.867 +01:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-03-10 01:37:23.920 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2024-03-10 01:37:23.935 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-03-10 01:37:23.964 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2024-03-10 01:37:23.967 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-03-10 01:37:23.976 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-03-10 01:37:23.996 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p16='?' (Size = 450), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p17='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [ConcurrencyStamp] = @p3, [Email] = @p4, [EmailConfirmed] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+OUTPUT 1
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;
+2024-03-10 01:37:24.004 +01:00 [INF] User created: User2
+2024-03-10 01:37:24.005 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-03-10 01:37:24.005 +01:00 [INF] Executed action SportMarket_Backend.Controllers.AuthController.Register (SportMarket-Backend) in 230.2287ms
+2024-03-10 01:37:24.006 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.AuthController.Register (SportMarket-Backend)'
+2024-03-10 01:37:24.007 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8000/api/auth/register - 200 null text/plain; charset=utf-8 235.354ms
+2024-03-10 01:38:25.856 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8000/api/auth/register - application/json 119
+2024-03-10 01:38:25.858 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.AuthController.Register (SportMarket-Backend)'
+2024-03-10 01:38:25.859 +01:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(SportMarket_Backend.Models.DTO.RegisterRequestDTO) on controller SportMarket_Backend.Controllers.AuthController (SportMarket-Backend).
+2024-03-10 01:38:25.922 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-03-10 01:38:25.924 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-03-10 01:38:25.924 +01:00 [INF] Executed action SportMarket_Backend.Controllers.AuthController.Register (SportMarket-Backend) in 64.5421ms
+2024-03-10 01:38:25.925 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.AuthController.Register (SportMarket-Backend)'
+2024-03-10 01:38:25.925 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8000/api/auth/register - 400 null text/plain; charset=utf-8 68.9668ms
+2024-03-10 01:38:28.993 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8000/api/auth/register - application/json 119
+2024-03-10 01:38:28.994 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.AuthController.Register (SportMarket-Backend)'
+2024-03-10 01:38:28.995 +01:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(SportMarket_Backend.Models.DTO.RegisterRequestDTO) on controller SportMarket_Backend.Controllers.AuthController (SportMarket-Backend).
+2024-03-10 01:38:29.036 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-03-10 01:38:29.052 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2024-03-10 01:38:29.055 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-03-10 01:38:29.057 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2024-03-10 01:38:29.058 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-03-10 01:38:29.060 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-03-10 01:38:29.064 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p16='?' (Size = 450), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p17='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [ConcurrencyStamp] = @p3, [Email] = @p4, [EmailConfirmed] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+OUTPUT 1
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;
+2024-03-10 01:38:29.065 +01:00 [INF] User created: User3
+2024-03-10 01:38:29.065 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-03-10 01:38:29.066 +01:00 [INF] Executed action SportMarket_Backend.Controllers.AuthController.Register (SportMarket-Backend) in 70.8547ms
+2024-03-10 01:38:29.067 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.AuthController.Register (SportMarket-Backend)'
+2024-03-10 01:38:29.067 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8000/api/auth/register - 200 null text/plain; charset=utf-8 74.543ms

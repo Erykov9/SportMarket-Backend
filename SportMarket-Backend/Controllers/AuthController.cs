@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SportMarket_Backend.Models.DTO;
 using SportMarket_Backend.Repositories.Auth;
+using System.Text.Json;
 
 namespace SportMarket_Backend.Controllers
 {
@@ -12,11 +13,13 @@ namespace SportMarket_Backend.Controllers
     {
         private readonly UserManager<IdentityUser> _user;
         private readonly ITokenRepository _tokenRepository;
+        private readonly ILogger<AuthController> _logger;
 
-        public AuthController(UserManager<IdentityUser> user, ITokenRepository tokenRepository)
-        {
+        public AuthController(UserManager<IdentityUser> user, ITokenRepository tokenRepository, ILogger<AuthController> logger)
+        {           
             _user = user;
             _tokenRepository = tokenRepository;
+            _logger = logger;
         }
 
         [HttpPost]
@@ -39,6 +42,7 @@ namespace SportMarket_Backend.Controllers
 
                     if (identityResult.Succeeded)
                     {
+                        _logger.LogInformation($"User created: {JsonSerializer.Serialize(identityUser)}");
                         return Ok($"{identityUser.UserName} was registered. You can log in now.");
                     }
                 }
