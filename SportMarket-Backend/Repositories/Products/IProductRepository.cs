@@ -1,4 +1,5 @@
-﻿using SportMarket_Backend.Models.Domain;
+﻿using Microsoft.AspNetCore.Identity;
+using SportMarket_Backend.Models.Domain;
 
 namespace SportMarket_Backend.Repositories.Products
 {
@@ -9,7 +10,7 @@ namespace SportMarket_Backend.Repositories.Products
             string? sortBy = null, bool isAscending = true,
             int pageNumber = 1, int pageSize = 10);
         Task<Product?> GetByIdAsync(Guid id);
-        Task<Product> CreateAsync(Product product);
+        Task<Product> CreateAsync(Product product, IdentityUser user);
         Task<Product?> DeleteAsync(Guid id);
         Task<Product?> UpdateAsync(Guid id, Product product);
 

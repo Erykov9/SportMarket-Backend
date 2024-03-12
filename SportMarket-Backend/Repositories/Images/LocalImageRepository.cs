@@ -23,27 +23,36 @@ namespace SportMarket_Backend.Repositories.Images
         }
         public async Task<Image> Upload(Image image)
         {
-            var user = await _dbContext.Users.FirstOrDefaultAsync(i => i.Username == image.FileUsername);
+            //var user = await _dbContext.Users.FirstOrDefaultAsync(i => i.Username == image.FileUsername);
 
-            if (user == null)
-            {
-                throw new Exception("User not found.");
-            }
+            //if (user == null)
+            //{
+            //    throw new Exception("User not found.");
+            //}
 
-            var username = _mapper.Map<GetUsernameUserDTO>(user);
-            var userFolderPath = Path.Combine(_webHostEnvironment.ContentRootPath, _folderName, username.Username);
+            //var userFolderPath = Path.Combine(_webHostEnvironment.ContentRootPath, _folderName, username.Username);
 
-            if (!Directory.Exists(userFolderPath))
-            {
-                Directory.CreateDirectory(userFolderPath);
-            }
+            //if (!Directory.Exists(userFolderPath))
+            //{
+            //    Directory.CreateDirectory(userFolderPath);
+            //}
 
-            var localFilePath = Path.Combine(userFolderPath, $"{image.FileName}{image.FileExtension}");
+            //var localFilePath = Path.Combine(userFolderPath, $"{image.FileName}{image.FileExtension}");
 
+            //using var stream = new FileStream(localFilePath, FileMode.Create);
+            //await image.File.CopyToAsync(stream);
+
+            var localFilePath = Path.Combine(
+               _webHostEnvironment.ContentRootPath,
+               _folderName,
+               $"{image.FileName}{image.FileExtension}"
+               );
+
+            // upload image to local path
             using var stream = new FileStream(localFilePath, FileMode.Create);
             await image.File.CopyToAsync(stream);
 
-            var urlFilePath = $"{_httpContextAccessor.HttpContext.Request.Scheme}://{_httpContextAccessor.HttpContext.Request.Host}{_httpContextAccessor.HttpContext.Request.PathBase}/{_folderName}/{username.Username}/{image.FileName}{image.FileExtension}";
+            var urlFilePath = $"{_httpContextAccessor.HttpContext.Request.Scheme}://{_httpContextAccessor.HttpContext.Request.Host}{_httpContextAccessor.HttpContext.Request.PathBase}/{_folderName}/{image.FileName}{image.FileExtension}";
 
             image.FilePath = urlFilePath;
 

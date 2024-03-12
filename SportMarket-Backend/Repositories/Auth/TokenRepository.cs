@@ -17,9 +17,11 @@ namespace SportMarket_Backend.Repositories.Auth
 
         public string CreateJWTToken(IdentityUser user, List<string> roles)
         {
-            var claims = new List<Claim>();
-
-            claims.Add(new Claim(ClaimTypes.Name, user.UserName));
+            var claims = new List<Claim>()
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim(ClaimTypes.Name, user.UserName),
+            };
 
             foreach (var role in roles)
             {

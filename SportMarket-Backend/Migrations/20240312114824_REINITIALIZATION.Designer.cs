@@ -12,8 +12,8 @@ using SportMarket_Backend.Data;
 namespace SportMarket_Backend.Migrations
 {
     [DbContext(typeof(SportMarketDBContext))]
-    [Migration("20240305124018_Change Yser Model v3")]
-    partial class ChangeYserModelv3
+    [Migration("20240312114824_REINITIALIZATION")]
+    partial class REINITIALIZATION
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,38 +24,6 @@ namespace SportMarket_Backend.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("SportMarket_Backend.Models.DTO.ProductDTO", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("CategoryId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("ProductDescription")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ProductName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("ProductPrice")
-                        .HasColumnType("float");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("ProductDTO");
-                });
 
             modelBuilder.Entity("SportMarket_Backend.Models.Domain.Category", b =>
                 {
@@ -137,15 +105,10 @@ namespace SportMarket_Backend.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("ProductDTOId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("ProductId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ProductDTOId");
 
                     b.HasIndex("ProductId");
 
@@ -172,205 +135,129 @@ namespace SportMarket_Backend.Migrations
                     b.Property<double>("ProductPrice")
                         .HasColumnType("float");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Products");
 
                     b.HasData(
                         new
                         {
-                            Id = new Guid("e18b7c36-8a24-4ddf-93a6-3f27a7ccded0"),
+                            Id = new Guid("208f415d-8690-42dd-82dc-54f16a3397bd"),
                             CategoryId = new Guid("a3067d1f-1870-4afa-b45d-f39f0ed1d91e"),
                             ProductDescription = "A high-quality, adjustable weight dumbbell set for all your strength training needs.",
                             ProductName = "Professional Dumbbell Set",
-                            ProductPrice = 199.99000000000001,
-                            UserId = new Guid("e845efaa-1d29-4851-88c3-bf35a48f816b")
+                            ProductPrice = 199.99000000000001
                         },
                         new
                         {
-                            Id = new Guid("38f6e5d9-d44c-4a8d-ac65-e84a624092fd"),
+                            Id = new Guid("1138e45a-30a7-4fe0-8aa7-6684a84928fa"),
                             CategoryId = new Guid("a3067d1f-1870-4afa-b45d-f39f0ed1d91e"),
                             ProductDescription = "Eco-friendly, non-slip yoga mat designed for ultimate comfort and stability.",
                             ProductName = "Premium Yoga Mat",
-                            ProductPrice = 49.990000000000002,
-                            UserId = new Guid("e845efaa-1d29-4851-88c3-bf35a48f816b")
+                            ProductPrice = 49.990000000000002
                         },
                         new
                         {
-                            Id = new Guid("91764069-5a93-4f5e-9dd2-c5613f90baf4"),
+                            Id = new Guid("301c96ba-d615-4e58-a8ec-bb190d7044d3"),
                             CategoryId = new Guid("9d89386d-8fe2-4b04-9138-c40b5f4b9e0f"),
                             ProductDescription = "Ergonomically designed handle to improve grip strength and arm wrestling techniques.",
                             ProductName = "Armwrestling Training Handle",
-                            ProductPrice = 35.990000000000002,
-                            UserId = new Guid("e845efaa-1d29-4851-88c3-bf35a48f816b")
+                            ProductPrice = 35.990000000000002
                         },
                         new
                         {
-                            Id = new Guid("1117e6e7-3c30-4ea7-a5de-6307d4f4ae48"),
+                            Id = new Guid("299c0388-f6fd-4a12-aadf-c802751871a8"),
                             CategoryId = new Guid("9d89386d-8fe2-4b04-9138-c40b5f4b9e0f"),
                             ProductDescription = "Competition-grade armwrestling table with adjustable height and padded surfaces.",
                             ProductName = "Professional Armwrestling Table",
-                            ProductPrice = 299.99000000000001,
-                            UserId = new Guid("e845efaa-1d29-4851-88c3-bf35a48f816b")
+                            ProductPrice = 299.99000000000001
                         },
                         new
                         {
-                            Id = new Guid("24a34411-7d4e-4a8c-afcf-a157f768c633"),
+                            Id = new Guid("88b95450-9ca0-43b5-9426-87a5a662355b"),
                             CategoryId = new Guid("f5956c45-74bc-4e06-8bcc-935c8579d1af"),
                             ProductDescription = "Durable, wall-mounted pull-up bar for various bodyweight exercises.",
                             ProductName = "Calisthenics Pull-Up Bar",
-                            ProductPrice = 59.990000000000002,
-                            UserId = new Guid("e845efaa-1d29-4851-88c3-bf35a48f816b")
+                            ProductPrice = 59.990000000000002
                         },
                         new
                         {
-                            Id = new Guid("d2357f63-1ec8-4738-980d-e1eeb9c2820d"),
+                            Id = new Guid("7d095179-061c-478b-b9d4-87ba9be16576"),
                             CategoryId = new Guid("f5956c45-74bc-4e06-8bcc-935c8579d1af"),
                             ProductDescription = "Lightweight, yet sturdy parallettes for calisthenics training on the go.",
                             ProductName = "Portable Parallettes",
-                            ProductPrice = 44.990000000000002,
-                            UserId = new Guid("e845efaa-1d29-4851-88c3-bf35a48f816b")
+                            ProductPrice = 44.990000000000002
                         },
                         new
                         {
-                            Id = new Guid("964507d3-9191-4320-9721-1142ca60c8ec"),
+                            Id = new Guid("32d604b8-ceda-45fd-99fb-ad0359a13551"),
                             CategoryId = new Guid("dab3ad41-dd26-4448-9442-e3418c5dc771"),
                             ProductDescription = "Highly protective and comfortable helmet for mountain biking enthusiasts.",
                             ProductName = "Mountain Bike Helmet",
-                            ProductPrice = 89.989999999999995,
-                            UserId = new Guid("e845efaa-1d29-4851-88c3-bf35a48f816b")
+                            ProductPrice = 89.989999999999995
                         },
                         new
                         {
-                            Id = new Guid("db185ed6-6381-49ba-9c02-7b5b4e4134e6"),
+                            Id = new Guid("1d4d9dcb-5383-4f3d-a9a9-2f4ecc1c2f75"),
                             CategoryId = new Guid("dab3ad41-dd26-4448-9442-e3418c5dc771"),
                             ProductDescription = "Breathable, shock-absorbing gloves for enhanced grip and comfort during long rides.",
                             ProductName = "Performance Cycling Gloves",
-                            ProductPrice = 29.989999999999998,
-                            UserId = new Guid("e845efaa-1d29-4851-88c3-bf35a48f816b")
+                            ProductPrice = 29.989999999999998
                         },
                         new
                         {
-                            Id = new Guid("e4e34604-1ace-485e-b37b-120a8a6d3f70"),
+                            Id = new Guid("457c445e-3800-4763-b472-b5d0b4cc8c49"),
                             CategoryId = new Guid("66eaede8-5121-46cd-896d-e8f76ed1b8c0"),
                             ProductDescription = "Versatile snowboard designed for all levels of snowboarding, offering stability and control.",
                             ProductName = "All-Mountain Snowboard",
-                            ProductPrice = 399.99000000000001,
-                            UserId = new Guid("e845efaa-1d29-4851-88c3-bf35a48f816b")
+                            ProductPrice = 399.99000000000001
                         },
                         new
                         {
-                            Id = new Guid("9d45b4a7-ce92-40c1-a5ac-3ccff42dff77"),
+                            Id = new Guid("9d24ef7d-c016-4801-8abd-6a0d61febd56"),
                             CategoryId = new Guid("66eaede8-5121-46cd-896d-e8f76ed1b8c0"),
                             ProductDescription = "Waterproof and windproof jacket with thermal insulation to keep you warm on the slopes.",
                             ProductName = "Thermal Snowboard Jacket",
-                            ProductPrice = 159.99000000000001,
-                            UserId = new Guid("e845efaa-1d29-4851-88c3-bf35a48f816b")
+                            ProductPrice = 159.99000000000001
                         },
                         new
                         {
-                            Id = new Guid("7e7e2b4e-72a7-438d-85d9-b4c81c92aaf9"),
+                            Id = new Guid("7ffee2cc-2a97-488b-9dbd-ab6b197d9f25"),
                             CategoryId = new Guid("349cec4a-38d7-451b-802b-cef4ce0f2909"),
                             ProductDescription = "Lightweight, durable running shoes with exceptional cushioning for long-distance runs.",
                             ProductName = "High-Performance Running Shoes",
-                            ProductPrice = 119.98999999999999,
-                            UserId = new Guid("e845efaa-1d29-4851-88c3-bf35a48f816b")
+                            ProductPrice = 119.98999999999999
                         },
                         new
                         {
-                            Id = new Guid("17f361d3-f60c-46e7-8db5-ba7bfd803cc8"),
+                            Id = new Guid("45f50a94-7323-4f00-8ec5-966d27471717"),
                             CategoryId = new Guid("349cec4a-38d7-451b-802b-cef4ce0f2909"),
                             ProductDescription = "High-visibility vest for safe running during early mornings or late evenings.",
                             ProductName = "Reflective Running Vest",
-                            ProductPrice = 24.989999999999998,
-                            UserId = new Guid("e845efaa-1d29-4851-88c3-bf35a48f816b")
+                            ProductPrice = 24.989999999999998
                         },
                         new
                         {
-                            Id = new Guid("f555dbc8-b6f1-4299-80c0-70c57c7dded8"),
+                            Id = new Guid("59f042be-8844-4297-8534-dcf34db48b87"),
                             CategoryId = new Guid("e70f2319-cf3e-4384-bd8e-101e23d9d8c3"),
                             ProductDescription = "Traditional, durable karate uniform made from high-quality fabric for training and competitions.",
                             ProductName = "Karate Gi",
-                            ProductPrice = 64.989999999999995,
-                            UserId = new Guid("e845efaa-1d29-4851-88c3-bf35a48f816b")
+                            ProductPrice = 64.989999999999995
                         },
                         new
                         {
-                            Id = new Guid("b424f888-bbd7-4828-958b-231329a421ce"),
+                            Id = new Guid("d8ebd603-2222-45bc-8f39-55ead2e54823"),
                             CategoryId = new Guid("e70f2319-cf3e-4384-bd8e-101e23d9d8c3"),
                             ProductDescription = "Premium leather boxing gloves designed for maximum protection and performance.",
                             ProductName = "Boxing Gloves",
-                            ProductPrice = 79.989999999999995,
-                            UserId = new Guid("e845efaa-1d29-4851-88c3-bf35a48f816b")
+                            ProductPrice = 79.989999999999995
                         });
-                });
-
-            modelBuilder.Entity("SportMarket_Backend.Models.Domain.UserDTO", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("RankName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("RankPoints")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("e845efaa-1d29-4851-88c3-bf35a48f816b"),
-                            Email = "szczepanekeryk@gmail.com",
-                            RankPoints = 0,
-                            Username = "Erykov9"
-                        });
-                });
-
-            modelBuilder.Entity("SportMarket_Backend.Models.DTO.ProductDTO", b =>
-                {
-                    b.HasOne("SportMarket_Backend.Models.Domain.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("SportMarket_Backend.Models.Domain.UserDTO", "User")
-                        .WithMany("Products")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("SportMarket_Backend.Models.Domain.Image", b =>
                 {
-                    b.HasOne("SportMarket_Backend.Models.DTO.ProductDTO", null)
-                        .WithMany("Images")
-                        .HasForeignKey("ProductDTOId");
-
                     b.HasOne("SportMarket_Backend.Models.Domain.Product", "Product")
                         .WithMany("Images")
                         .HasForeignKey("ProductId")
@@ -388,30 +275,12 @@ namespace SportMarket_Backend.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SportMarket_Backend.Models.Domain.UserDTO", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Category");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("SportMarket_Backend.Models.DTO.ProductDTO", b =>
-                {
-                    b.Navigation("Images");
                 });
 
             modelBuilder.Entity("SportMarket_Backend.Models.Domain.Product", b =>
                 {
                     b.Navigation("Images");
-                });
-
-            modelBuilder.Entity("SportMarket_Backend.Models.Domain.UserDTO", b =>
-                {
-                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

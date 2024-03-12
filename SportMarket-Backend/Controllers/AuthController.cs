@@ -42,7 +42,7 @@ namespace SportMarket_Backend.Controllers
 
                     if (identityResult.Succeeded)
                     {
-                        _logger.LogInformation($"User created: {JsonSerializer.Serialize(identityUser)}");
+                        _logger.LogInformation($"User created: {JsonSerializer.Serialize(identityUser.Id)}");
                         return Ok($"{identityUser.UserName} was registered. You can log in now.");
                     }
                 }

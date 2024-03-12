@@ -9,7 +9,6 @@ namespace SportMarket_Backend.Models.DTO
         public string ProductDescription { get; set; }
         public Category Category { get; set; }
         public double ProductPrice { get; set; }
-        public User User { get; set; }
 
         public ICollection<Image> Images { get; } = new List<Image>();
     }

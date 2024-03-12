@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SportMarket_Backend.Data;
 using SportMarket_Backend.Models.Domain;
 using SportMarket_Backend.Models.DTO;
 using SportMarket_Backend.Repositories.Products;
+using System.Security.Claims;
 
 namespace SportMarket_Backend.Controllers
 {
@@ -14,11 +16,13 @@ namespace SportMarket_Backend.Controllers
     {
         private readonly IProductRepository _productRepository;
         private readonly IMapper _mapper;
+        private readonly UserManager<IdentityUser> _user;
 
-        public ProductsController(IProductRepository productRepository, IMapper mapper)
+        public ProductsController(IProductRepository productRepository, IMapper mapper, UserManager<IdentityUser> user)
         {
             _productRepository = productRepository;
             _mapper = mapper;
+            _user = user;
         }
 
         [HttpGet]
@@ -52,10 +56,13 @@ namespace SportMarket_Backend.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Create([FromBody] AddProductRequestDTO addProductDTO)
         {
             var productDomain = _mapper.Map<Product>(addProductDTO);
-            await _productRepository.CreateAsync(productDomain);
+            var user = await _user.GetUserAsync(User);
+            
+            await _productRepository.CreateAsync(productDomain, user);
 
             var productDTO = _mapper.Map<ProductDTO>(productDomain);
             return Ok(productDTO);
