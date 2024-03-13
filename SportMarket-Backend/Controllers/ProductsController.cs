@@ -62,7 +62,12 @@ namespace SportMarket_Backend.Controllers
             var productDomain = _mapper.Map<Product>(addProductDTO);
             var user = await _user.GetUserAsync(User);
             
-            await _productRepository.CreateAsync(productDomain, user);
+            var product = await _productRepository.CreateAsync(productDomain, user);
+
+            if(product == null)
+            {
+                return NotFound("User doesn't exists.");
+            }
 
             var productDTO = _mapper.Map<ProductDTO>(productDomain);
             return Ok(productDTO);

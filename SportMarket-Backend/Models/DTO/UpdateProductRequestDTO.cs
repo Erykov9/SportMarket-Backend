@@ -17,6 +17,8 @@ namespace SportMarket_Backend.Models.DTO
         [Required]
         public Guid CategoryId { get; set; }
 
+        public Guid UserId { get; set; }
+
         [Required]
         [Range(1, 100000)]
         public double ProductPrice { get; set; }

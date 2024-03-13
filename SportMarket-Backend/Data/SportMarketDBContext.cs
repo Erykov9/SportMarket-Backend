@@ -10,10 +10,21 @@ namespace SportMarket_Backend.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Image> Images { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            var user = new User()
+            {
+                Id = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e"),
+                Username = "Erykov9",
+                Email = "szczepanekeryk@gmail.com",
+                UserId = Guid.Parse("3cf0d365-026f-4bbf-a6ca-68fed94c0c5e")
+            };
+
+            modelBuilder.Entity<User>().HasData(user);
 
             var categories = new List<Category>()
             {
@@ -65,6 +76,7 @@ namespace SportMarket_Backend.Data
                     ProductDescription = "A high-quality, adjustable weight dumbbell set for all your strength training needs.",
                     ProductPrice = 199.99,
                     CategoryId = Guid.Parse("a3067d1f-1870-4afa-b45d-f39f0ed1d91e"),
+                    UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
                 new Product()
                 {
@@ -73,6 +85,7 @@ namespace SportMarket_Backend.Data
                     ProductDescription = "Eco-friendly, non-slip yoga mat designed for ultimate comfort and stability.",
                     ProductPrice = 49.99,
                     CategoryId = Guid.Parse("a3067d1f-1870-4afa-b45d-f39f0ed1d91e"),
+                    UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
 
                 // Produkty dla kategorii Armwrestling
@@ -83,6 +96,7 @@ namespace SportMarket_Backend.Data
                     ProductDescription = "Ergonomically designed handle to improve grip strength and arm wrestling techniques.",
                     ProductPrice = 35.99,
                     CategoryId = Guid.Parse("9d89386d-8fe2-4b04-9138-c40b5f4b9e0f"),
+                    UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
                 new Product()
                 {
@@ -91,6 +105,7 @@ namespace SportMarket_Backend.Data
                     ProductDescription = "Competition-grade armwrestling table with adjustable height and padded surfaces.",
                     ProductPrice = 299.99,
                     CategoryId = Guid.Parse("9d89386d-8fe2-4b04-9138-c40b5f4b9e0f"),
+                    UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e"),
                 },
 
                 // Produkty dla kategorii Calisthenics
@@ -101,6 +116,7 @@ namespace SportMarket_Backend.Data
                     ProductDescription = "Durable, wall-mounted pull-up bar for various bodyweight exercises.",
                     ProductPrice = 59.99,
                     CategoryId = Guid.Parse("f5956c45-74bc-4e06-8bcc-935c8579d1af"),
+                    UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
                 new Product()
                 {
@@ -109,6 +125,7 @@ namespace SportMarket_Backend.Data
                     ProductDescription = "Lightweight, yet sturdy parallettes for calisthenics training on the go.",
                     ProductPrice = 44.99,
                     CategoryId = Guid.Parse("f5956c45-74bc-4e06-8bcc-935c8579d1af"),
+                    UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
 
                 // Produkty dla kategorii Biking
@@ -119,6 +136,7 @@ namespace SportMarket_Backend.Data
                     ProductDescription = "Highly protective and comfortable helmet for mountain biking enthusiasts.",
                     ProductPrice = 89.99,
                     CategoryId = Guid.Parse("dab3ad41-dd26-4448-9442-e3418c5dc771"),
+                    UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
                 new Product()
                 {
@@ -127,6 +145,7 @@ namespace SportMarket_Backend.Data
                     ProductDescription = "Breathable, shock-absorbing gloves for enhanced grip and comfort during long rides.",
                     ProductPrice = 29.99,
                     CategoryId = Guid.Parse("dab3ad41-dd26-4448-9442-e3418c5dc771"),
+                    UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
 
                 // Produkty dla kategorii Snowboard
@@ -137,6 +156,7 @@ namespace SportMarket_Backend.Data
                     ProductDescription = "Versatile snowboard designed for all levels of snowboarding, offering stability and control.",
                     ProductPrice = 399.99,
                     CategoryId = Guid.Parse("66eaede8-5121-46cd-896d-e8f76ed1b8c0"),
+                    UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
                 new Product()
                 {
@@ -145,6 +165,7 @@ namespace SportMarket_Backend.Data
                     ProductDescription = "Waterproof and windproof jacket with thermal insulation to keep you warm on the slopes.",
                     ProductPrice = 159.99,
                     CategoryId = Guid.Parse("66eaede8-5121-46cd-896d-e8f76ed1b8c0"),
+                    UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
 
                 // Produkty dla kategorii Running
@@ -155,6 +176,7 @@ namespace SportMarket_Backend.Data
                     ProductDescription = "Lightweight, durable running shoes with exceptional cushioning for long-distance runs.",
                     ProductPrice = 119.99,
                     CategoryId = Guid.Parse("349cec4a-38d7-451b-802b-cef4ce0f2909"),
+                    UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
                 new Product()
                 {
@@ -163,6 +185,7 @@ namespace SportMarket_Backend.Data
                     ProductDescription = "High-visibility vest for safe running during early mornings or late evenings.",
                     ProductPrice = 24.99,
                     CategoryId = Guid.Parse("349cec4a-38d7-451b-802b-cef4ce0f2909"),
+                    UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
 
                 // Produkty dla kategorii Martial Arts
@@ -173,6 +196,7 @@ namespace SportMarket_Backend.Data
                     ProductDescription = "Traditional, durable karate uniform made from high-quality fabric for training and competitions.",
                     ProductPrice = 64.99,
                     CategoryId = Guid.Parse("e70f2319-cf3e-4384-bd8e-101e23d9d8c3"),
+                    UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
                 new Product()
                 {
@@ -181,6 +205,7 @@ namespace SportMarket_Backend.Data
                     ProductDescription = "Premium leather boxing gloves designed for maximum protection and performance.",
                     ProductPrice = 79.99,
                     CategoryId = Guid.Parse("e70f2319-cf3e-4384-bd8e-101e23d9d8c3"),
+                    UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
             };
 

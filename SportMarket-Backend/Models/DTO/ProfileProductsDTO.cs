@@ -2,14 +2,13 @@
 
 namespace SportMarket_Backend.Models.DTO
 {
-    public class ProductDTO
+    public class ProfileProductsDTO
     {
         public Guid Id { get; set; }
         public string ProductName { get; set; }
         public string ProductDescription { get; set; }
-        public Category Category { get; set; }
         public double ProductPrice { get; set; }
-        public UserDTO User { get; set; }
+        public Category Category { get; set; }
 
         public ICollection<Image> Images { get; } = new List<Image>();
     }

@@ -9,6 +9,7 @@ using SportMarket_Backend.Mappings;
 using SportMarket_Backend.Repositories.Auth;
 using SportMarket_Backend.Repositories.Images;
 using SportMarket_Backend.Repositories.Products;
+using SportMarket_Backend.Repositories.Profiles;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -38,6 +39,7 @@ builder.Services.AddDbContext<SportMarketAuthDBContext>(options => options.UseSq
 builder.Services.AddScoped<IProductRepository, SQLProductRepository>();
 builder.Services.AddScoped<IImageRepository, LocalImageRepository>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
+builder.Services.AddScoped<IProfileRepository, SQLProfileRepository>();
 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 

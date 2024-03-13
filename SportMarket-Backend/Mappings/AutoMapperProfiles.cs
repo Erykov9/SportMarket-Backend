@@ -11,6 +11,10 @@ namespace SportMarket_Backend.Mappings
             CreateMap<Product, ProductDTO>().ReverseMap();
             CreateMap<AddProductRequestDTO, Product>().ReverseMap();
             CreateMap<UpdateProductRequestDTO, Product>().ReverseMap();
+            CreateMap<Product, ProfileProductsDTO>().ReverseMap();
+
+            CreateMap<User, UserDTO>().ReverseMap();
+            CreateMap<User, ProfileDTO>().ReverseMap();
         }
     }
 }

@@ -16,6 +16,16 @@ namespace SportMarket_Backend.Repositories.Products
 
         public async Task<Product> CreateAsync(Product product, IdentityUser user)
         {
+            var userToFind = Guid.Parse(user.Id);
+            var userToInclude = await _dBContext.Users.FirstOrDefaultAsync(x => x.UserId == userToFind);
+
+            if (userToInclude == null)
+            {
+                return null;
+            }
+
+            product.UserId = userToInclude.Id;
+
             await _dBContext.Products.AddAsync(product);
             await _dBContext.SaveChangesAsync();
 
@@ -42,7 +52,7 @@ namespace SportMarket_Backend.Repositories.Products
             int pageNumber = 1, int pageSize = 10)
         {
 
-            var products = _dBContext.Products.Include(x => x.Category).AsQueryable();
+            var products = _dBContext.Products.Include(x => x.Category).Include(x => x.User).AsQueryable();
 
             if (!string.IsNullOrWhiteSpace(filterOn) && !string.IsNullOrWhiteSpace(filterQuery))
             {
@@ -81,7 +91,7 @@ namespace SportMarket_Backend.Repositories.Products
 
         public async Task<Product> GetByIdAsync(Guid id)
         {
-            var product = await _dBContext.Products.Include(x => x.Category).FirstOrDefaultAsync(p => p.Id == id);
+            var product = await _dBContext.Products.Include(x => x.Category).Include(x => x.User).FirstOrDefaultAsync(p => p.Id == id);
 
             if (product == null) 
             {

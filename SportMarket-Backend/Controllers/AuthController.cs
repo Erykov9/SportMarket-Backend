@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using SportMarket_Backend.Data;
+using SportMarket_Backend.Models.Domain;
 using SportMarket_Backend.Models.DTO;
 using SportMarket_Backend.Repositories.Auth;
 using System.Text.Json;
@@ -14,12 +16,14 @@ namespace SportMarket_Backend.Controllers
         private readonly UserManager<IdentityUser> _user;
         private readonly ITokenRepository _tokenRepository;
         private readonly ILogger<AuthController> _logger;
+        private readonly SportMarketDBContext _dBContext;
 
-        public AuthController(UserManager<IdentityUser> user, ITokenRepository tokenRepository, ILogger<AuthController> logger)
+        public AuthController(UserManager<IdentityUser> user, ITokenRepository tokenRepository, ILogger<AuthController> logger, SportMarketDBContext dBContext )
         {           
             _user = user;
             _tokenRepository = tokenRepository;
             _logger = logger;
+            _dBContext = dBContext;
         }
 
         [HttpPost]
@@ -33,6 +37,7 @@ namespace SportMarket_Backend.Controllers
             };
 
             var identityResult = await _user.CreateAsync(identityUser, registerRequestDTO.Password);
+ 
 
             if (identityResult.Succeeded)
             {
@@ -42,6 +47,16 @@ namespace SportMarket_Backend.Controllers
 
                     if (identityResult.Succeeded)
                     {
+                        var newUser = new User()
+                        {
+                            Username = registerRequestDTO.Username,
+                            Email = registerRequestDTO.Email,
+                            UserId = Guid.Parse(identityUser.Id)
+                        };
+
+                        await _dBContext.AddAsync(newUser);
+                        await _dBContext.SaveChangesAsync();
+
                         _logger.LogInformation($"User created: {JsonSerializer.Serialize(identityUser.Id)}");
                         return Ok($"{identityUser.UserName} was registered. You can log in now.");
                     }
