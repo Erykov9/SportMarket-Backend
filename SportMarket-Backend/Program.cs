@@ -7,6 +7,7 @@ using Serilog;
 using SportMarket_Backend.Data;
 using SportMarket_Backend.Mappings;
 using SportMarket_Backend.Repositories.Auth;
+using SportMarket_Backend.Repositories.Categories;
 using SportMarket_Backend.Repositories.Images;
 using SportMarket_Backend.Repositories.Products;
 using SportMarket_Backend.Repositories.Profiles;
@@ -25,6 +26,11 @@ var logger = new LoggerConfiguration()
 builder.Logging.ClearProviders();
 builder.Logging.AddSerilog(logger);
 
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("AllowSpecificOrigin", builder => builder.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod());
+});
+
 builder.Services.AddControllers();
 builder.Services.AddHttpContextAccessor();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -40,6 +46,7 @@ builder.Services.AddScoped<IProductRepository, SQLProductRepository>();
 builder.Services.AddScoped<IImageRepository, LocalImageRepository>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddScoped<IProfileRepository, SQLProfileRepository>();
+builder.Services.AddScoped<ICategoryRepository, SQLCategoryRepository>();
 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
@@ -82,10 +89,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("AllowSpecificOrigin");
+app.UseRouting();
+
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseEndpoints(endpoints => endpoints.MapControllers());
 
 app.UseStaticFiles(new StaticFileOptions
 {

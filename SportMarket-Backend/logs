@@ -17664,3 +17664,1396 @@ WHERE [p].[Id] = @__id_0
 2024-03-13 01:08:32.883 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetById (SportMarket-Backend) in 10.8892ms
 2024-03-13 01:08:32.883 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetById (SportMarket-Backend)'
 2024-03-13 01:08:32.884 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8000/api/products/050c2cff-82c3-4243-fc20-08dc42f19620 - 404 null application/problem+json; charset=utf-8 14.3134ms
+2024-03-15 14:33:21.399 +01:00 [INF] User profile is available. Using 'C:\Users\szcze\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-15 14:33:21.725 +01:00 [INF] Now listening on: https://localhost:8000
+2024-03-15 14:33:21.726 +01:00 [INF] Now listening on: http://localhost:8001
+2024-03-15 14:33:21.750 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-15 14:33:21.751 +01:00 [INF] Hosting environment: Development
+2024-03-15 14:33:21.751 +01:00 [INF] Content root path: D:\Programowanie\SportMarket-Backend\SportMarket-Backend
+2024-03-15 14:33:22.341 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/index.html - null null
+2024-03-15 14:33:22.513 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/index.html - 200 null text/html;charset=utf-8 175.0792ms
+2024-03-15 14:33:22.515 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_vs/browserLink - null null
+2024-03-15 14:33:22.515 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-15 14:33:22.522 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 7.4109ms
+2024-03-15 14:33:22.542 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.335ms
+2024-03-15 14:33:22.615 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - null null
+2024-03-15 14:33:22.668 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.3552ms
+2024-03-15 14:33:27.456 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/Products?isAscending=true&pageNumber=1&pageSize=10 - null null
+2024-03-15 14:33:27.928 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-03-15 14:33:27.930 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-15 14:33:27.931 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/Products?isAscending=true&pageNumber=1&pageSize=10 - 401 0 null 475.2049ms
+2024-03-15 14:51:30.608 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/index.html - null null
+2024-03-15 14:51:30.621 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/index.html - 200 null text/html;charset=utf-8 13.4752ms
+2024-03-15 14:51:30.629 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_vs/browserLink - null null
+2024-03-15 14:51:30.629 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-15 14:51:30.633 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 4.2336ms
+2024-03-15 14:51:30.639 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.0083ms
+2024-03-15 14:51:30.709 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - null null
+2024-03-15 14:51:30.715 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.6347ms
+2024-03-15 14:56:59.752 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/products - null null
+2024-03-15 14:56:59.755 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/products - 404 0 null 3.5899ms
+2024-03-15 14:56:59.756 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/products - null null
+2024-03-15 14:56:59.757 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/products, Response status code: 404
+2024-03-15 14:56:59.758 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/products - 404 0 null 1.9345ms
+2024-03-15 14:56:59.761 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/products, Response status code: 404
+2024-03-15 14:57:57.485 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/products - null null
+2024-03-15 14:57:57.488 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/products - 404 0 null 3.1974ms
+2024-03-15 14:57:57.489 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/products, Response status code: 404
+2024-03-15 14:58:01.367 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/products - null null
+2024-03-15 14:58:01.368 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/products - 404 0 null 1.4566ms
+2024-03-15 14:58:01.369 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/products, Response status code: 404
+2024-03-15 14:58:08.084 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/products - null null
+2024-03-15 14:58:08.086 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/products - 404 0 null 1.3524ms
+2024-03-15 14:58:08.087 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/products, Response status code: 404
+2024-03-15 14:58:09.926 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/products - null null
+2024-03-15 14:58:09.927 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/products - 404 0 null 1.2874ms
+2024-03-15 14:58:09.929 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/products, Response status code: 404
+2024-03-15 14:58:17.935 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/products - null null
+2024-03-15 14:58:17.936 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/products - 404 0 null 1.2679ms
+2024-03-15 14:58:17.937 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/products, Response status code: 404
+2024-03-15 15:01:46.142 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/index.html - null null
+2024-03-15 15:01:46.150 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/index.html - 200 null text/html;charset=utf-8 7.9495ms
+2024-03-15 15:01:46.160 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-15 15:01:46.160 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_vs/browserLink - null null
+2024-03-15 15:01:46.161 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 1.3957ms
+2024-03-15 15:01:46.166 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.1082ms
+2024-03-15 15:01:46.209 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - null null
+2024-03-15 15:01:46.215 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.4634ms
+2024-03-15 15:01:51.461 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/products - null null
+2024-03-15 15:01:51.462 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/products - 404 0 null 1.5265ms
+2024-03-15 15:01:51.463 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/products - null null
+2024-03-15 15:01:51.463 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/products, Response status code: 404
+2024-03-15 15:01:51.464 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/products - 404 0 null 1.7218ms
+2024-03-15 15:01:51.466 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/products, Response status code: 404
+2024-03-15 15:02:01.058 +01:00 [INF] User profile is available. Using 'C:\Users\szcze\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-15 15:02:01.161 +01:00 [INF] Now listening on: https://localhost:8000
+2024-03-15 15:02:01.162 +01:00 [INF] Now listening on: http://localhost:8001
+2024-03-15 15:02:01.184 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-15 15:02:01.185 +01:00 [INF] Hosting environment: Development
+2024-03-15 15:02:01.185 +01:00 [INF] Content root path: D:\Programowanie\SportMarket-Backend\SportMarket-Backend
+2024-03-15 15:02:01.683 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/index.html - null null
+2024-03-15 15:02:01.775 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/index.html - 200 null text/html;charset=utf-8 94.0313ms
+2024-03-15 15:02:01.778 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_vs/browserLink - null null
+2024-03-15 15:02:01.778 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-15 15:02:01.785 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 6.7237ms
+2024-03-15 15:02:01.798 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.9887ms
+2024-03-15 15:02:01.823 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - null null
+2024-03-15 15:02:01.874 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 50.671ms
+2024-03-15 15:02:04.316 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/products - null null
+2024-03-15 15:02:04.353 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/products - 404 0 null 36.7327ms
+2024-03-15 15:02:04.354 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/products - null null
+2024-03-15 15:02:04.355 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/products, Response status code: 404
+2024-03-15 15:02:04.356 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/products - 404 0 null 1.9555ms
+2024-03-15 15:02:04.360 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/products, Response status code: 404
+2024-03-15 15:03:46.507 +01:00 [INF] User profile is available. Using 'C:\Users\szcze\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-15 15:03:46.629 +01:00 [INF] Now listening on: https://localhost:8000
+2024-03-15 15:03:46.632 +01:00 [INF] Now listening on: http://localhost:8001
+2024-03-15 15:03:46.660 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-15 15:03:46.660 +01:00 [INF] Hosting environment: Development
+2024-03-15 15:03:46.661 +01:00 [INF] Content root path: D:\Programowanie\SportMarket-Backend\SportMarket-Backend
+2024-03-15 15:03:46.796 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/index.html - null null
+2024-03-15 15:03:46.888 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/index.html - 200 null text/html;charset=utf-8 95.8678ms
+2024-03-15 15:03:46.891 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_vs/browserLink - null null
+2024-03-15 15:03:46.891 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-15 15:03:46.897 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 6.4829ms
+2024-03-15 15:03:46.912 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.7097ms
+2024-03-15 15:03:46.941 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - null null
+2024-03-15 15:03:46.998 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 56.9554ms
+2024-03-15 15:03:50.820 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/products - null null
+2024-03-15 15:03:50.824 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:03:50.865 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/products - 404 0 null 45.2494ms
+2024-03-15 15:03:50.866 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/products - null null
+2024-03-15 15:03:50.868 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:03:50.868 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/products, Response status code: 404
+2024-03-15 15:03:50.869 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/products - 404 0 null 2.9709ms
+2024-03-15 15:03:50.874 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/products, Response status code: 404
+2024-03-15 15:04:22.891 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products - null null
+2024-03-15 15:04:22.892 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:04:22.896 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:04:22.915 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:04:23.648 +01:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-03-15 15:04:23.649 +01:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-03-15 15:04:24.228 +01:00 [INF] Executed DbCommand (64ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:04:24.283 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:04:24.300 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 1381.9217ms
+2024-03-15 15:04:24.301 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:04:24.305 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products - 200 null application/json; charset=utf-8 1414.6876ms
+2024-03-15 15:04:28.683 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products - null null
+2024-03-15 15:04:28.685 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:04:28.686 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:04:28.686 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:04:28.700 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:04:28.702 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:04:28.704 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 16.5353ms
+2024-03-15 15:04:28.704 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:04:28.705 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products - null null
+2024-03-15 15:04:28.705 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products - 200 null application/json; charset=utf-8 21.5049ms
+2024-03-15 15:04:28.705 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:04:28.707 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:04:28.707 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:04:28.745 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:04:28.747 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:04:28.748 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 40.058ms
+2024-03-15 15:04:28.748 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:04:28.749 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products - 200 null application/json; charset=utf-8 44.4275ms
+2024-03-15 15:05:47.729 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products - null null
+2024-03-15 15:05:47.730 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:05:47.731 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:05:47.731 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:05:47.736 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:05:47.738 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:05:47.739 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 7.4106ms
+2024-03-15 15:05:47.740 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:05:47.740 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products - 200 null application/json; charset=utf-8 11.4495ms
+2024-03-15 15:06:20.043 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products - null null
+2024-03-15 15:06:20.048 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:06:20.048 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:06:20.049 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:06:20.055 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:06:20.057 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:06:20.058 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 8.2241ms
+2024-03-15 15:06:20.063 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:06:20.063 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products - 200 null application/json; charset=utf-8 20.1745ms
+2024-03-15 15:06:43.565 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products - null null
+2024-03-15 15:06:43.566 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:06:43.566 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:06:43.567 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:06:43.569 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:06:43.570 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:06:43.571 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 4.013ms
+2024-03-15 15:06:43.572 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:06:43.572 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products - 200 null application/json; charset=utf-8 7.6616ms
+2024-03-15 15:06:45.940 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products - null null
+2024-03-15 15:06:45.942 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:06:45.942 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:06:45.943 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:06:45.946 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:06:45.950 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:06:45.951 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 7.8115ms
+2024-03-15 15:06:45.952 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:06:45.952 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products - 200 null application/json; charset=utf-8 12.0238ms
+2024-03-15 15:06:47.779 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products - null null
+2024-03-15 15:06:47.780 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:06:47.781 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:06:47.781 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:06:47.784 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:06:47.785 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:06:47.786 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.9463ms
+2024-03-15 15:06:47.786 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:06:47.787 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products - 200 null application/json; charset=utf-8 7.3646ms
+2024-03-15 15:06:58.471 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/Products?isAscending=true&pageNumber=1&pageSize=10 - null null
+2024-03-15 15:06:58.472 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:06:58.473 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:06:58.491 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:06:58.492 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:06:58.493 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 19.5172ms
+2024-03-15 15:06:58.494 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:06:58.494 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/Products?isAscending=true&pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 22.8597ms
+2024-03-15 15:07:08.405 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/Products?filterOn=productname&filterQuery=abc&isAscending=true&pageNumber=1&pageSize=10 - null null
+2024-03-15 15:07:08.406 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:07:08.407 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:07:08.414 +01:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-03-15 15:07:08.415 +01:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-03-15 15:07:08.426 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__filterQuery_0_contains='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    WHERE [p].[ProductName] LIKE @__filterQuery_0_contains ESCAPE N'\'
+    ORDER BY (SELECT 1)
+    OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:07:08.427 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:07:08.428 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 19.3151ms
+2024-03-15 15:07:08.428 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:07:08.429 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/Products?filterOn=productname&filterQuery=abc&isAscending=true&pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 23.9147ms
+2024-03-15 15:07:11.353 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/Products?filterOn=productname&filterQuery=ab&isAscending=true&pageNumber=1&pageSize=10 - null null
+2024-03-15 15:07:11.354 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:07:11.355 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:07:11.358 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__filterQuery_0_contains='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    WHERE [p].[ProductName] LIKE @__filterQuery_0_contains ESCAPE N'\'
+    ORDER BY (SELECT 1)
+    OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:07:11.359 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:07:11.359 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.7671ms
+2024-03-15 15:07:11.360 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:07:11.360 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/Products?filterOn=productname&filterQuery=ab&isAscending=true&pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 7.2114ms
+2024-03-15 15:07:26.162 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products - null null
+2024-03-15 15:07:26.163 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:07:26.164 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:07:26.164 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:07:26.169 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:07:26.170 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:07:26.171 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 5.9872ms
+2024-03-15 15:07:26.172 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:07:26.172 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products - 200 null application/json; charset=utf-8 10.2256ms
+2024-03-15 15:07:28.441 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products - null null
+2024-03-15 15:07:28.442 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:07:28.443 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:07:28.443 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:07:28.446 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:07:28.447 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:07:28.448 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.6742ms
+2024-03-15 15:07:28.448 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:07:28.448 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products - null null
+2024-03-15 15:07:28.449 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products - 200 null application/json; charset=utf-8 7.6358ms
+2024-03-15 15:07:28.450 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:07:28.451 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:07:28.451 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:07:28.453 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:07:28.455 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:07:28.455 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.5585ms
+2024-03-15 15:07:28.456 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:07:28.456 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products - 200 null application/json; charset=utf-8 8.0844ms
+2024-03-15 15:07:46.360 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=ab&isAscending=true&pageNumber=1&pageSize=10 - null null
+2024-03-15 15:07:46.361 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:07:46.362 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:07:46.362 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:07:46.365 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__filterQuery_0_contains='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    WHERE [p].[ProductName] LIKE @__filterQuery_0_contains ESCAPE N'\'
+    ORDER BY (SELECT 1)
+    OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:07:46.366 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:07:46.367 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.9565ms
+2024-03-15 15:07:46.367 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:07:46.368 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=ab&isAscending=true&pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 7.7067ms
+2024-03-15 15:08:00.267 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=ket&isAscending=true&pageNumber=1&pageSize=10 - null null
+2024-03-15 15:08:00.268 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:08:00.269 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:08:00.269 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:08:00.272 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__filterQuery_0_contains='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    WHERE [p].[ProductName] LIKE @__filterQuery_0_contains ESCAPE N'\'
+    ORDER BY (SELECT 1)
+    OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:08:00.273 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:08:00.274 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.7633ms
+2024-03-15 15:08:00.274 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:08:00.275 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=ket&isAscending=true&pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 7.7393ms
+2024-03-15 15:08:13.377 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=ket&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:08:13.378 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:08:13.379 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:08:13.379 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:08:13.386 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__filterQuery_0_contains='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    WHERE [p].[ProductName] LIKE @__filterQuery_0_contains ESCAPE N'\'
+    ORDER BY (SELECT 1)
+    OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:08:13.388 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:08:13.388 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 8.4428ms
+2024-03-15 15:08:13.389 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:08:13.390 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=ket&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 12.983ms
+2024-03-15 15:08:17.805 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:08:17.806 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:08:17.806 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:08:17.806 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:08:17.811 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:08:17.812 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:08:17.813 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 5.7495ms
+2024-03-15 15:08:17.815 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:08:17.816 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 11.3621ms
+2024-03-15 15:09:55.933 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:09:55.935 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:09:55.936 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:09:55.936 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:09:55.941 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:09:55.942 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:09:55.943 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 6.4443ms
+2024-03-15 15:09:55.946 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:09:55.946 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 13.8724ms
+2024-03-15 15:10:27.235 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:10:27.238 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:10:27.239 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:10:27.239 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:10:27.244 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:10:27.245 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:10:27.246 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 6.5878ms
+2024-03-15 15:10:27.250 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:10:27.250 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 14.9674ms
+2024-03-15 15:10:58.425 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:10:58.429 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:10:58.429 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:10:58.430 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:10:58.432 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:10:58.433 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:10:58.434 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 4.0735ms
+2024-03-15 15:10:58.437 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:10:58.437 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:10:58.438 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:10:58.438 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 12.8616ms
+2024-03-15 15:10:58.438 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:10:58.440 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:10:58.442 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:10:58.444 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:10:58.445 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.9142ms
+2024-03-15 15:10:58.445 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:10:58.446 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 9.4019ms
+2024-03-15 15:11:11.992 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/apiapi/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:11:11.993 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:11:11.994 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/apiapi/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 404 0 null 1.709ms
+2024-03-15 15:11:11.994 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/apiapi/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:11:11.995 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/apiapi/products, Response status code: 404
+2024-03-15 15:11:11.996 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:11:11.997 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/apiapi/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 404 0 null 2.6808ms
+2024-03-15 15:11:11.998 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/apiapi/products, Response status code: 404
+2024-03-15 15:11:26.613 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:11:26.614 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:11:26.615 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:11:26.615 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:11:26.620 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:11:26.621 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:11:26.622 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 5.7335ms
+2024-03-15 15:11:26.624 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:11:26.625 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 11.6138ms
+2024-03-15 15:18:20.954 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:18:20.957 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:18:20.957 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:18:20.958 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:18:20.994 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:18:20.996 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:18:20.997 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 38.0772ms
+2024-03-15 15:18:20.997 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:18:20.998 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:18:20.998 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 44.5804ms
+2024-03-15 15:18:21.002 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:18:21.003 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:18:21.004 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:18:21.006 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:18:21.007 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:18:21.008 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.8828ms
+2024-03-15 15:18:21.009 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:18:21.009 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 11.4097ms
+2024-03-15 15:18:59.969 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:18:59.971 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:18:59.971 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:18:59.972 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:18:59.974 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:18:59.975 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:18:59.976 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.9698ms
+2024-03-15 15:18:59.977 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:18:59.979 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:18:59.980 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:18:59.980 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 10.9354ms
+2024-03-15 15:18:59.981 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:18:59.982 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:18:59.985 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:18:59.986 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:18:59.987 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.6826ms
+2024-03-15 15:18:59.987 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:18:59.988 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 10.8705ms
+2024-03-15 15:19:16.662 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:19:16.663 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:19:16.664 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:19:16.664 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:19:16.669 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:19:16.670 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:19:16.671 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 5.9283ms
+2024-03-15 15:19:16.671 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:19:16.672 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:19:16.672 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 10.1482ms
+2024-03-15 15:19:16.673 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:19:16.674 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:19:16.675 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:19:16.677 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:19:16.678 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:19:16.679 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.9118ms
+2024-03-15 15:19:16.680 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:19:16.680 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 8.5314ms
+2024-03-15 15:21:45.755 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:21:45.758 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:21:45.759 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:21:45.759 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:21:45.764 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:21:45.765 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:21:45.766 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 6.4237ms
+2024-03-15 15:21:45.768 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:21:45.768 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:21:45.769 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:21:45.770 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 14.8806ms
+2024-03-15 15:21:45.770 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:21:45.771 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:21:45.774 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:21:45.775 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:21:45.776 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.9456ms
+2024-03-15 15:21:45.777 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:21:45.777 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 10.447ms
+2024-03-15 15:26:56.172 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:26:56.175 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:26:56.176 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:26:56.176 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:26:56.220 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:26:56.221 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:26:56.222 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 44.9836ms
+2024-03-15 15:26:56.224 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:26:56.225 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:26:56.227 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:26:56.227 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 54.5703ms
+2024-03-15 15:26:56.227 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:26:56.229 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:26:56.231 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:26:56.232 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:26:56.233 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.2658ms
+2024-03-15 15:26:56.233 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:26:56.234 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 9.4761ms
+2024-03-15 15:34:30.000 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:34:30.003 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:34:30.004 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:34:30.004 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:34:30.046 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:34:30.047 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:34:30.048 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 43.1288ms
+2024-03-15 15:34:30.048 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:34:30.049 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:34:30.049 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 48.9329ms
+2024-03-15 15:34:30.052 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:34:30.053 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:34:30.053 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:34:30.055 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:34:30.056 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:34:30.057 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.1456ms
+2024-03-15 15:34:30.057 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:34:30.058 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 9.23ms
+2024-03-15 15:34:40.794 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:34:40.796 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:34:40.796 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:34:40.796 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:34:40.801 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:34:40.802 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:34:40.803 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 6.1006ms
+2024-03-15 15:34:40.804 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:34:40.804 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:34:40.804 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 10.226ms
+2024-03-15 15:34:40.805 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:34:40.807 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:34:40.807 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:34:40.809 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:34:40.811 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:34:40.812 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.9755ms
+2024-03-15 15:34:40.812 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:34:40.813 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 8.5213ms
+2024-03-15 15:37:12.483 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:37:12.486 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:37:12.487 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:12.487 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:37:12.492 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:37:12.493 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:37:12.494 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 5.931ms
+2024-03-15 15:37:12.494 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:12.495 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:37:12.495 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 11.6776ms
+2024-03-15 15:37:12.497 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:37:12.499 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:12.499 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:37:12.501 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:37:12.502 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:37:12.503 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.2206ms
+2024-03-15 15:37:12.503 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:12.504 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 9.3403ms
+2024-03-15 15:37:38.865 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:37:38.866 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:37:38.866 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:38.866 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:37:38.868 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:37:38.870 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:37:38.871 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.6794ms
+2024-03-15 15:37:38.871 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:37:38.873 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:38.874 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:37:38.874 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 9.9939ms
+2024-03-15 15:37:38.875 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:38.876 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:37:38.878 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:37:38.879 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:37:38.880 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.2632ms
+2024-03-15 15:37:38.881 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:38.881 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 9.9388ms
+2024-03-15 15:37:54.350 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:37:54.351 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:37:54.351 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:54.352 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:37:54.357 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:37:54.358 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:37:54.359 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 6.5958ms
+2024-03-15 15:37:54.360 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:37:54.360 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:54.361 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:37:54.361 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 11.132ms
+2024-03-15 15:37:54.361 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:54.363 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:37:54.365 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:37:54.366 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:37:54.367 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.58ms
+2024-03-15 15:37:54.369 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:54.369 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 9.8648ms
+2024-03-15 15:37:55.981 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:37:55.982 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:37:55.982 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:55.982 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:37:55.985 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:37:55.986 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:37:55.987 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.5604ms
+2024-03-15 15:37:55.987 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:55.988 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:37:55.988 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 7.5837ms
+2024-03-15 15:37:55.989 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:37:55.990 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:55.990 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:37:55.993 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:37:55.994 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:37:55.995 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.5828ms
+2024-03-15 15:37:55.995 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:55.996 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 8.3099ms
+2024-03-15 15:37:58.512 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:37:58.513 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:37:58.513 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:58.514 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:37:58.516 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:37:58.517 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:37:58.518 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.6335ms
+2024-03-15 15:37:58.519 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:58.519 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:37:58.519 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 7.1447ms
+2024-03-15 15:37:58.520 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:37:58.521 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:58.521 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:37:58.523 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:37:58.525 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:37:58.525 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.2644ms
+2024-03-15 15:37:58.526 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:37:58.526 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 7.6073ms
+2024-03-15 15:47:26.250 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:47:26.254 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:47:26.254 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:47:26.255 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:47:26.295 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:47:26.296 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:47:26.297 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 41.3635ms
+2024-03-15 15:47:26.297 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:47:26.298 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 15:47:26.298 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 48.0392ms
+2024-03-15 15:47:26.300 +01:00 [INF] CORS policy execution successful.
+2024-03-15 15:47:26.302 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:47:26.302 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 15:47:26.304 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 15:47:26.305 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 15:47:26.306 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.2091ms
+2024-03-15 15:47:26.306 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 15:47:26.307 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 9.3517ms
+2024-03-15 16:14:58.050 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/Products/3a9439b0-1ee6-4730-a8ee-5304a15c9ab6 - null null
+2024-03-15 16:14:58.054 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetById (SportMarket-Backend)'
+2024-03-15 16:14:58.067 +01:00 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 16:14:58.108 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[UserId] = [u].[Id]
+WHERE [p].[Id] = @__id_0
+2024-03-15 16:14:58.111 +01:00 [INF] Executing OkObjectResult, writing value of type 'SportMarket_Backend.Models.DTO.ProductDTO'.
+2024-03-15 16:14:58.112 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetById (SportMarket-Backend) in 44.0871ms
+2024-03-15 16:14:58.112 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetById (SportMarket-Backend)'
+2024-03-15 16:14:58.113 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/Products/3a9439b0-1ee6-4730-a8ee-5304a15c9ab6 - 200 null application/json; charset=utf-8 63.3107ms
+2024-03-15 16:19:50.491 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 16:19:50.495 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:19:50.495 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 16:19:50.496 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 16:19:50.530 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 16:19:50.531 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 16:19:50.532 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 34.886ms
+2024-03-15 16:19:50.532 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 16:19:50.532 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 16:19:50.535 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 44.3372ms
+2024-03-15 16:19:50.537 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:19:50.538 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 16:19:50.538 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 16:19:50.540 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 16:19:50.541 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 16:19:50.542 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.1715ms
+2024-03-15 16:19:50.543 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 16:19:50.543 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 10.9117ms
+2024-03-15 16:21:13.718 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - null null
+2024-03-15 16:21:13.721 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:21:13.721 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 16:21:13.722 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 16:21:13.727 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 16:21:13.728 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 16:21:13.729 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 6.8193ms
+2024-03-15 16:21:13.732 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 16:21:13.732 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products?filterOn=productname&filterQuery=&isAscending=true&pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 14.6696ms
+2024-03-15 16:22:22.337 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/productsundefined - null null
+2024-03-15 16:22:22.340 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:22:22.341 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/productsundefined - 404 0 null 3.2833ms
+2024-03-15 16:22:22.342 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/api/productsundefined, Response status code: 404
+2024-03-15 16:22:48.020 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/productsundefined - null null
+2024-03-15 16:22:48.023 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:22:48.024 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/productsundefined - 404 0 null 3.7973ms
+2024-03-15 16:22:48.025 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/productsundefined - null null
+2024-03-15 16:22:48.025 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/api/productsundefined, Response status code: 404
+2024-03-15 16:22:48.026 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:22:48.027 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/productsundefined - 404 0 null 2.4891ms
+2024-03-15 16:22:48.029 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/api/productsundefined, Response status code: 404
+2024-03-15 16:23:23.459 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/productsundefined - null null
+2024-03-15 16:23:23.462 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:23:23.463 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/productsundefined - 404 0 null 3.7429ms
+2024-03-15 16:23:23.464 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/productsundefined - null null
+2024-03-15 16:23:23.464 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/api/productsundefined, Response status code: 404
+2024-03-15 16:23:23.465 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:23:23.466 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/productsundefined - 404 0 null 2.1897ms
+2024-03-15 16:23:23.467 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/api/productsundefined, Response status code: 404
+2024-03-15 16:24:17.196 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products - null null
+2024-03-15 16:24:17.199 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:24:17.199 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 16:24:17.200 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 16:24:17.205 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 16:24:17.206 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 16:24:17.206 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 6.0649ms
+2024-03-15 16:24:17.207 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 16:24:17.208 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products - 200 null application/json; charset=utf-8 11.8693ms
+2024-03-15 16:24:18.968 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products - null null
+2024-03-15 16:24:18.969 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:24:18.969 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 16:24:18.970 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 16:24:18.972 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 16:24:18.973 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 16:24:18.974 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.7725ms
+2024-03-15 16:24:18.975 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/products - null null
+2024-03-15 16:24:18.977 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 16:24:18.978 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:24:18.979 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products - 200 null application/json; charset=utf-8 10.7752ms
+2024-03-15 16:24:18.979 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 16:24:18.980 +01:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.String, System.String, Boolean, Int32, Int32) on controller SportMarket_Backend.Controllers.ProductsController (SportMarket-Backend).
+2024-03-15 16:24:18.982 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[ProductDescription], [t].[ProductName], [t].[ProductPrice], [t].[UserId], [c].[Id], [c].[CategoryName], [u].[Id], [u].[Email], [u].[UserId], [u].[Username]
+FROM (
+    SELECT [p].[Id], [p].[CategoryId], [p].[ProductDescription], [p].[ProductName], [p].[ProductPrice], [p].[UserId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+2024-03-15 16:24:18.983 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.ProductDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 16:24:18.984 +01:00 [INF] Executed action SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend) in 3.0297ms
+2024-03-15 16:24:18.985 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.ProductsController.GetAll (SportMarket-Backend)'
+2024-03-15 16:24:18.985 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/products - 200 null application/json; charset=utf-8 10.1635ms
+2024-03-15 16:24:27.708 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/categories - null null
+2024-03-15 16:24:27.709 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:24:27.709 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/categories - 404 0 null 1.7012ms
+2024-03-15 16:24:27.712 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:8000/api/categories, Response status code: 404
+2024-03-15 16:33:44.577 +01:00 [INF] User profile is available. Using 'C:\Users\szcze\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-15 16:33:44.678 +01:00 [INF] Now listening on: https://localhost:8000
+2024-03-15 16:33:44.679 +01:00 [INF] Now listening on: http://localhost:8001
+2024-03-15 16:33:44.702 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-15 16:33:44.702 +01:00 [INF] Hosting environment: Development
+2024-03-15 16:33:44.703 +01:00 [INF] Content root path: D:\Programowanie\SportMarket-Backend\SportMarket-Backend
+2024-03-15 16:33:45.165 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/index.html - null null
+2024-03-15 16:33:45.248 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/index.html - 200 null text/html;charset=utf-8 84.6387ms
+2024-03-15 16:33:45.251 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_vs/browserLink - null null
+2024-03-15 16:33:45.251 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-15 16:33:45.254 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 3.6642ms
+2024-03-15 16:33:45.270 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.8712ms
+2024-03-15 16:33:45.298 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - null null
+2024-03-15 16:33:45.351 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 52.9713ms
+2024-03-15 16:33:47.627 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/categories - null null
+2024-03-15 16:33:47.631 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:33:47.667 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:33:47.676 +01:00 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SportMarket_Backend.Controllers.CategoriesController (SportMarket-Backend).
+2024-03-15 16:33:48.308 +01:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-03-15 16:33:48.336 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.Domain.Category, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 16:33:48.342 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/categories - null null
+2024-03-15 16:33:48.343 +01:00 [INF] Executed action SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend) in 664.1154ms
+2024-03-15 16:33:48.343 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:33:48.344 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:33:48.345 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:33:48.345 +01:00 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SportMarket_Backend.Controllers.CategoriesController (SportMarket-Backend).
+2024-03-15 16:33:48.348 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/categories - 200 null application/json; charset=utf-8 720.8381ms
+2024-03-15 16:33:48.356 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-03-15 16:33:48.358 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.Domain.Category, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 16:33:48.358 +01:00 [INF] Executed action SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend) in 12.0842ms
+2024-03-15 16:33:48.359 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:33:48.359 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/categories - 200 null application/json; charset=utf-8 17.4779ms
+2024-03-15 16:34:43.041 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/index.html - null null
+2024-03-15 16:34:43.052 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/index.html - 200 null text/html;charset=utf-8 10.5242ms
+2024-03-15 16:34:43.057 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-15 16:34:43.057 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_vs/browserLink - null null
+2024-03-15 16:34:43.058 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 1.587ms
+2024-03-15 16:34:43.067 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.3756ms
+2024-03-15 16:34:43.088 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - null null
+2024-03-15 16:34:43.095 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.301ms
+2024-03-15 16:34:44.714 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/categories - null null
+2024-03-15 16:34:44.716 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:34:44.717 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:34:44.720 +01:00 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SportMarket_Backend.Controllers.CategoriesController (SportMarket-Backend).
+2024-03-15 16:34:44.755 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-03-15 16:34:44.793 +01:00 [INF] Executed action SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend) in 71.9489ms
+2024-03-15 16:34:44.794 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:34:44.796 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> CategoryDTO
+System.Collections.Generic.List`1[[SportMarket_Backend.Models.Domain.Category, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> SportMarket_Backend.Models.DTO.CategoryDTO
+   at lambda_method80(Closure, Object, CategoryDTO, ResolutionContext)
+   at SportMarket_Backend.Controllers.CategoriesController.GetAll()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-15 16:34:44.838 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/categories - 500 null text/plain; charset=utf-8 124.2522ms
+2024-03-15 16:34:44.839 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/categories - null null
+2024-03-15 16:34:44.841 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:34:44.842 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:34:44.842 +01:00 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SportMarket_Backend.Controllers.CategoriesController (SportMarket-Backend).
+2024-03-15 16:34:44.844 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-03-15 16:34:44.858 +01:00 [INF] Executed action SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend) in 15.2378ms
+2024-03-15 16:34:44.859 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:34:44.860 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> CategoryDTO
+System.Collections.Generic.List`1[[SportMarket_Backend.Models.Domain.Category, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> SportMarket_Backend.Models.DTO.CategoryDTO
+   at lambda_method80(Closure, Object, CategoryDTO, ResolutionContext)
+   at SportMarket_Backend.Controllers.CategoriesController.GetAll()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-15 16:34:44.863 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/categories - 500 null text/plain; charset=utf-8 23.5792ms
+2024-03-15 16:34:48.566 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/categories - null null
+2024-03-15 16:34:48.567 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:34:48.568 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:34:48.568 +01:00 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SportMarket_Backend.Controllers.CategoriesController (SportMarket-Backend).
+2024-03-15 16:34:48.570 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-03-15 16:34:48.585 +01:00 [INF] Executed action SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend) in 16.2869ms
+2024-03-15 16:34:48.586 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:34:48.587 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> CategoryDTO
+System.Collections.Generic.List`1[[SportMarket_Backend.Models.Domain.Category, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> SportMarket_Backend.Models.DTO.CategoryDTO
+   at lambda_method80(Closure, Object, CategoryDTO, ResolutionContext)
+   at SportMarket_Backend.Controllers.CategoriesController.GetAll()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-15 16:34:48.590 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/categories - 500 null text/plain; charset=utf-8 24.5495ms
+2024-03-15 16:34:48.591 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/categories - null null
+2024-03-15 16:34:48.592 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:34:48.593 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:34:48.593 +01:00 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SportMarket_Backend.Controllers.CategoriesController (SportMarket-Backend).
+2024-03-15 16:34:48.595 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-03-15 16:34:48.608 +01:00 [INF] Executed action SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend) in 14.6314ms
+2024-03-15 16:34:48.609 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:34:48.610 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> CategoryDTO
+System.Collections.Generic.List`1[[SportMarket_Backend.Models.Domain.Category, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> SportMarket_Backend.Models.DTO.CategoryDTO
+   at lambda_method80(Closure, Object, CategoryDTO, ResolutionContext)
+   at SportMarket_Backend.Controllers.CategoriesController.GetAll()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-15 16:34:48.613 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/categories - 500 null text/plain; charset=utf-8 22.125ms
+2024-03-15 16:34:58.763 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/Categories - null null
+2024-03-15 16:34:58.764 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:34:58.765 +01:00 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SportMarket_Backend.Controllers.CategoriesController (SportMarket-Backend).
+2024-03-15 16:34:58.767 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-03-15 16:34:58.787 +01:00 [INF] Executed action SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend) in 21.7938ms
+2024-03-15 16:34:58.788 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:34:58.789 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> CategoryDTO
+System.Collections.Generic.List`1[[SportMarket_Backend.Models.Domain.Category, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> SportMarket_Backend.Models.DTO.CategoryDTO
+   at lambda_method80(Closure, Object, CategoryDTO, ResolutionContext)
+   at SportMarket_Backend.Controllers.CategoriesController.GetAll()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-15 16:34:58.792 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/Categories - 500 null text/plain; charset=utf-8 28.3952ms
+2024-03-15 16:36:01.105 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/index.html - null null
+2024-03-15 16:36:01.113 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/index.html - 200 null text/html;charset=utf-8 8.7885ms
+2024-03-15 16:36:01.124 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-15 16:36:01.124 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/_vs/browserLink - null null
+2024-03-15 16:36:01.126 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 1.4847ms
+2024-03-15 16:36:01.132 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.8677ms
+2024-03-15 16:36:01.193 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - null null
+2024-03-15 16:36:01.199 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.776ms
+2024-03-15 16:36:03.896 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/Categories - null null
+2024-03-15 16:36:03.898 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:36:03.900 +01:00 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SportMarket_Backend.Controllers.CategoriesController (SportMarket-Backend).
+2024-03-15 16:36:03.903 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-03-15 16:36:03.908 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.CategoryDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 16:36:03.909 +01:00 [INF] Executed action SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend) in 8.9196ms
+2024-03-15 16:36:03.910 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:36:03.910 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/Categories - 200 null application/json; charset=utf-8 14.1545ms
+2024-03-15 16:36:07.165 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/categories - null null
+2024-03-15 16:36:07.166 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:36:07.167 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:36:07.167 +01:00 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SportMarket_Backend.Controllers.CategoriesController (SportMarket-Backend).
+2024-03-15 16:36:07.170 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-03-15 16:36:07.171 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.CategoryDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 16:36:07.172 +01:00 [INF] Executed action SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend) in 3.5115ms
+2024-03-15 16:36:07.172 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:36:07.173 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8000/api/categories - null null
+2024-03-15 16:36:07.173 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/categories - 200 null application/json; charset=utf-8 8.5384ms
+2024-03-15 16:36:07.174 +01:00 [INF] CORS policy execution successful.
+2024-03-15 16:36:07.176 +01:00 [INF] Executing endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:36:07.176 +01:00 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SportMarket_Backend.Controllers.CategoriesController (SportMarket-Backend).
+2024-03-15 16:36:07.178 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-03-15 16:36:07.179 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SportMarket_Backend.Models.DTO.CategoryDTO, SportMarket-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-15 16:36:07.180 +01:00 [INF] Executed action SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend) in 3.0779ms
+2024-03-15 16:36:07.180 +01:00 [INF] Executed endpoint 'SportMarket_Backend.Controllers.CategoriesController.GetAll (SportMarket-Backend)'
+2024-03-15 16:36:07.181 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8000/api/categories - 200 null application/json; charset=utf-8 7.9666ms
