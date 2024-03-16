@@ -56,12 +56,12 @@ namespace SportMarket_Backend.Data
                 new Category()
                 {
                     Id = Guid.Parse("349cec4a-38d7-451b-802b-cef4ce0f2909"),
-                    CategoryName = "Runnig"
+                    CategoryName = "Running"
                 },
                 new Category()
                 {
                     Id = Guid.Parse("e70f2319-cf3e-4384-bd8e-101e23d9d8c3"),
-                    CategoryName = "Material Arts"
+                    CategoryName = "Martial Arts"
                 }
             };
 

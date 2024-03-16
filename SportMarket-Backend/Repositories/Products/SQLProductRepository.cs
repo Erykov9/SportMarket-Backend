@@ -48,11 +48,16 @@ namespace SportMarket_Backend.Repositories.Products
 
         public async Task<List<Product>> GetAllAsync(
             string? filterOn, string? filterQuery,
-            string? sortBy, bool isAscending,
+            string? sortBy, string? filterCategory,  bool isAscending,
             int pageNumber = 1, int pageSize = 10)
         {
 
             var products = _dBContext.Products.Include(x => x.Category).Include(x => x.User).AsQueryable();
+
+            if(!string.IsNullOrWhiteSpace(filterCategory))
+            {
+                products = products.Where(x => x.Category.CategoryName.Contains(filterCategory));
+            }
 
             if (!string.IsNullOrWhiteSpace(filterOn) && !string.IsNullOrWhiteSpace(filterQuery))
             {

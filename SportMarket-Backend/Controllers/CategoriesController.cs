@@ -18,6 +18,7 @@ namespace SportMarket_Backend.Controllers
             _mapper = mapper;
             _categoryRepository = categoryRepository;
         }
+
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {

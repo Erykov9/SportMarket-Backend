@@ -28,11 +28,13 @@ namespace SportMarket_Backend.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll(
             [FromQuery] string? filterOn, [FromQuery] string? filterQuery,
-            [FromQuery] string? sortBy, [FromQuery] bool isAscending = true,
+            [FromQuery] string? sortBy, [FromQuery] string? filterCategory,
+            [FromQuery] bool isAscending = true,
             [FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10
+            
             )
         {
-            var productsDomain = await _productRepository.GetAllAsync(filterOn, filterQuery, sortBy, isAscending, pageNumber, pageSize);
+            var productsDomain = await _productRepository.GetAllAsync(filterOn, filterQuery, sortBy, filterCategory, isAscending, pageNumber, pageSize);
             var productsDTO = _mapper.Map<List<ProductDTO>>(productsDomain);
 
             return Ok(productsDTO);
