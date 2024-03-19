@@ -35,9 +35,17 @@ namespace SportMarket_Backend.Controllers
             )
         {
             var productsDomain = await _productRepository.GetAllAsync(filterOn, filterQuery, sortBy, filterCategory, isAscending, pageNumber, pageSize);
-            var productsDTO = _mapper.Map<List<ProductDTO>>(productsDomain);
+            var productsDTO = _mapper.Map<List<ProductDTO>>(productsDomain.Products);
+            var paginatedProductsDTO = new ProductPaginationResponseDTO<ProductDTO>
+            {
+                Products = productsDTO,
+                PageNumber = productsDomain.PageNumber,
+                PageSize = productsDomain.PageSize,
+                TotalCount = productsDomain.TotalCount,
+            };
 
-            return Ok(productsDTO);
+
+            return Ok(paginatedProductsDTO);
         }
 
         [HttpGet]

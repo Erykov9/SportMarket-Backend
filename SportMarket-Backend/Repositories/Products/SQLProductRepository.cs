@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using SportMarket_Backend.Data;
 using SportMarket_Backend.Models.Domain;
+using SportMarket_Backend.Models.DTO;
 
 namespace SportMarket_Backend.Repositories.Products
 {
@@ -46,7 +47,7 @@ namespace SportMarket_Backend.Repositories.Products
             return product;
         }
 
-        public async Task<List<Product>> GetAllAsync(
+        public async Task<ProductPaginationResponseDTO<Product>> GetAllAsync(
             string? filterOn, string? filterQuery,
             string? sortBy, string? filterCategory,  bool isAscending,
             int pageNumber = 1, int pageSize = 10)
@@ -89,9 +90,18 @@ namespace SportMarket_Backend.Repositories.Products
             }
 
             var skipResults = (pageNumber - 1) * pageSize;
+            var totalProducts = await products.CountAsync();
+            var productsList = await products.Skip(skipResults).Take(pageSize).ToListAsync();
+            var result = new ProductPaginationResponseDTO<Product>
+            {
+                Products = productsList,
+                TotalCount = totalProducts,
+                PageSize = pageSize,
+                PageNumber = pageNumber,
+            };
 
 
-            return await products.Skip(skipResults).Take(pageSize).ToListAsync();
+            return result;
         }
 
         public async Task<Product> GetByIdAsync(Guid id)

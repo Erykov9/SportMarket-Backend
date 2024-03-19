@@ -13,10 +13,15 @@ namespace SportMarket_Backend.Models.DTO
         [MinLength(20, ErrorMessage = "Product description should have at least 20 characters.")]
         [MaxLength(1000, ErrorMessage = "Product description has to be maximum of 1000 characters.")]
         public string ProductDescription { get; set; }
+        [Required]
+        public DateTime CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        [Required]
+        public string Location { get; set; }
 
         [Required]
         public Guid CategoryId { get; set; }
-
+        [Required]
         public Guid UserId { get; set; }
 
         [Required]

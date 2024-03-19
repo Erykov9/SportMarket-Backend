@@ -75,6 +75,8 @@ namespace SportMarket_Backend.Data
                     ProductName = "Professional Dumbbell Set",
                     ProductDescription = "A high-quality, adjustable weight dumbbell set for all your strength training needs.",
                     ProductPrice = 199.99,
+                    CreatedAt = new DateTime(2024, 02, 12),
+                    Location = "Wrocław",
                     CategoryId = Guid.Parse("a3067d1f-1870-4afa-b45d-f39f0ed1d91e"),
                     UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
@@ -84,6 +86,8 @@ namespace SportMarket_Backend.Data
                     ProductName = "Premium Yoga Mat",
                     ProductDescription = "Eco-friendly, non-slip yoga mat designed for ultimate comfort and stability.",
                     ProductPrice = 49.99,
+                    CreatedAt = new DateTime(2024, 02, 12),
+                    Location = "Wrocław",
                     CategoryId = Guid.Parse("a3067d1f-1870-4afa-b45d-f39f0ed1d91e"),
                     UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
@@ -95,6 +99,8 @@ namespace SportMarket_Backend.Data
                     ProductName = "Armwrestling Training Handle",
                     ProductDescription = "Ergonomically designed handle to improve grip strength and arm wrestling techniques.",
                     ProductPrice = 35.99,
+                    CreatedAt = new DateTime(2024, 01, 14),
+                    Location = "Kraków",
                     CategoryId = Guid.Parse("9d89386d-8fe2-4b04-9138-c40b5f4b9e0f"),
                     UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
@@ -104,6 +110,8 @@ namespace SportMarket_Backend.Data
                     ProductName = "Professional Armwrestling Table",
                     ProductDescription = "Competition-grade armwrestling table with adjustable height and padded surfaces.",
                     ProductPrice = 299.99,
+                    CreatedAt = new DateTime(2023, 12, 29),
+                    Location = "Legnica",
                     CategoryId = Guid.Parse("9d89386d-8fe2-4b04-9138-c40b5f4b9e0f"),
                     UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e"),
                 },
@@ -115,6 +123,8 @@ namespace SportMarket_Backend.Data
                     ProductName = "Calisthenics Pull-Up Bar",
                     ProductDescription = "Durable, wall-mounted pull-up bar for various bodyweight exercises.",
                     ProductPrice = 59.99,
+                    CreatedAt = new DateTime(2023, 11, 01),
+                    Location = "Piotrków Trybunalski",
                     CategoryId = Guid.Parse("f5956c45-74bc-4e06-8bcc-935c8579d1af"),
                     UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
@@ -124,6 +134,8 @@ namespace SportMarket_Backend.Data
                     ProductName = "Portable Parallettes",
                     ProductDescription = "Lightweight, yet sturdy parallettes for calisthenics training on the go.",
                     ProductPrice = 44.99,
+                    CreatedAt = new DateTime(2024, 02, 23),
+                    Location = "Piotrków Trybunalski",
                     CategoryId = Guid.Parse("f5956c45-74bc-4e06-8bcc-935c8579d1af"),
                     UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
@@ -135,6 +147,8 @@ namespace SportMarket_Backend.Data
                     ProductName = "Mountain Bike Helmet",
                     ProductDescription = "Highly protective and comfortable helmet for mountain biking enthusiasts.",
                     ProductPrice = 89.99,
+                    CreatedAt = new DateTime(2024, 03, 19),
+                    Location = "Kalisz",
                     CategoryId = Guid.Parse("dab3ad41-dd26-4448-9442-e3418c5dc771"),
                     UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
@@ -144,6 +158,8 @@ namespace SportMarket_Backend.Data
                     ProductName = "Performance Cycling Gloves",
                     ProductDescription = "Breathable, shock-absorbing gloves for enhanced grip and comfort during long rides.",
                     ProductPrice = 29.99,
+                    CreatedAt = new DateTime(2024, 02, 12),
+                    Location = "Wrocław",
                     CategoryId = Guid.Parse("dab3ad41-dd26-4448-9442-e3418c5dc771"),
                     UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
@@ -155,6 +171,8 @@ namespace SportMarket_Backend.Data
                     ProductName = "All-Mountain Snowboard",
                     ProductDescription = "Versatile snowboard designed for all levels of snowboarding, offering stability and control.",
                     ProductPrice = 399.99,
+                    CreatedAt = new DateTime(2024, 02, 12),
+                    Location = "Wrocław",
                     CategoryId = Guid.Parse("66eaede8-5121-46cd-896d-e8f76ed1b8c0"),
                     UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
@@ -164,6 +182,8 @@ namespace SportMarket_Backend.Data
                     ProductName = "Thermal Snowboard Jacket",
                     ProductDescription = "Waterproof and windproof jacket with thermal insulation to keep you warm on the slopes.",
                     ProductPrice = 159.99,
+                    CreatedAt = new DateTime(2024, 02, 12),
+                    Location = "Wrocław",
                     CategoryId = Guid.Parse("66eaede8-5121-46cd-896d-e8f76ed1b8c0"),
                     UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
@@ -175,6 +195,8 @@ namespace SportMarket_Backend.Data
                     ProductName = "High-Performance Running Shoes",
                     ProductDescription = "Lightweight, durable running shoes with exceptional cushioning for long-distance runs.",
                     ProductPrice = 119.99,
+                    CreatedAt = new DateTime(2024, 02, 12),
+                    Location = "Wrocław",
                     CategoryId = Guid.Parse("349cec4a-38d7-451b-802b-cef4ce0f2909"),
                     UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
@@ -184,6 +206,8 @@ namespace SportMarket_Backend.Data
                     ProductName = "Reflective Running Vest",
                     ProductDescription = "High-visibility vest for safe running during early mornings or late evenings.",
                     ProductPrice = 24.99,
+                    CreatedAt = new DateTime(2024, 02, 12),
+                    Location = "Wrocław",
                     CategoryId = Guid.Parse("349cec4a-38d7-451b-802b-cef4ce0f2909"),
                     UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
@@ -195,6 +219,8 @@ namespace SportMarket_Backend.Data
                     ProductName = "Karate Gi",
                     ProductDescription = "Traditional, durable karate uniform made from high-quality fabric for training and competitions.",
                     ProductPrice = 64.99,
+                    CreatedAt = new DateTime(2024, 02, 12),
+                    Location = "Wrocław",
                     CategoryId = Guid.Parse("e70f2319-cf3e-4384-bd8e-101e23d9d8c3"),
                     UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },
@@ -204,6 +230,8 @@ namespace SportMarket_Backend.Data
                     ProductName = "Boxing Gloves",
                     ProductDescription = "Premium leather boxing gloves designed for maximum protection and performance.",
                     ProductPrice = 79.99,
+                    CreatedAt = new DateTime(2024, 02, 12),
+                    Location = "Wrocław",
                     CategoryId = Guid.Parse("e70f2319-cf3e-4384-bd8e-101e23d9d8c3"),
                     UserId = Guid.Parse("a3067d1f-1870-4afa-b45d-a39f0ed1d91e")
                 },

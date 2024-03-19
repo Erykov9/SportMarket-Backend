@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using SportMarket_Backend.Models.Domain;
+using SportMarket_Backend.Models.DTO;
 
 namespace SportMarket_Backend.Repositories.Products
 {
     public interface IProductRepository
     {
-        Task<List<Product>> GetAllAsync(
+        Task<ProductPaginationResponseDTO<Product>> GetAllAsync(
             string? filterOn = null, string? filterQuery = null,
             string? sortBy = null, string? filterCategory = null, bool isAscending = true,
             int pageNumber = 1, int pageSize = 10);
