@@ -87,6 +87,10 @@ namespace SportMarket_Backend.Repositories.Products
                 {
                     products = isAscending ? products.OrderBy(x => x.Category.CategoryName) : products.OrderByDescending(x => x.Category.CategoryName);
                 }
+                else if (sortBy.Equals("Location", StringComparison.OrdinalIgnoreCase))
+                {
+                    products = isAscending ? products.OrderBy(x => x.Location) : products.OrderByDescending(x => x.Location);
+                }
             }
 
             var skipResults = (pageNumber - 1) * pageSize;
