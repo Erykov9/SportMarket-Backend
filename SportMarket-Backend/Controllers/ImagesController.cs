@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using SportMarket_Backend.Data;
 using SportMarket_Backend.Models.Domain;
 using SportMarket_Backend.Models.DTO;
 using SportMarket_Backend.Repositories.Images;
@@ -11,10 +14,14 @@ namespace SportMarket_Backend.Controllers
     public class ImagesController : ControllerBase
     {
         private readonly IImageRepository _imageRepository;
+        private readonly UserManager<IdentityUser> _user;
+        private readonly SportMarketDBContext _dBContext;
 
-        public ImagesController(IImageRepository imageRepository)
+        public ImagesController(IImageRepository imageRepository, UserManager<IdentityUser> user, SportMarketDBContext dBContext)
         {
             _imageRepository = imageRepository;
+            _user = user;
+            _dBContext = dBContext;
         }
 
         [HttpPost]
@@ -22,9 +29,19 @@ namespace SportMarket_Backend.Controllers
         public async Task<IActionResult> Upload([FromForm] AddImageRequestDTO request)
         {
             ValidateFileUpload(request);
+            var user = await _user.GetUserAsync(User);
 
-            if (ModelState.IsValid)
+
+            if (ModelState.IsValid && user != null)
             {
+                var userId = Guid.Parse(user.Id);
+                var userToInclude = await _dBContext.Users.FirstOrDefaultAsync(x => userId == x.UserId);
+
+                if (userToInclude == null)
+                {
+                    return NotFound("User doesn't exists.");
+                }
+
                 var imageDomainModel = new Image
                 {
                     File = request.File,
@@ -32,7 +49,7 @@ namespace SportMarket_Backend.Controllers
                     FileSizeInBytes = request.File.Length,
                     FileName = request.FileName,
                     FileDescription = request.FileDescription,
-                    FileUsername = request.FileUsername,
+                    FileUsername = userToInclude.Username,
                     ProductId = Guid.Parse($"{request.ProductId}"),
                 };
 

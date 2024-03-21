@@ -15,6 +15,5 @@ namespace SportMarket_Backend.Models.Domain
         public string FilePath { get; set; }
         public string FileUsername { get; set; }
         public Guid ProductId { get; set; }
-        public Product Product { get; set; } = null!;
     }
 }

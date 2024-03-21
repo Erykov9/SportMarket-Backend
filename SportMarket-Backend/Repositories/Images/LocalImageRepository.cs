@@ -11,48 +11,29 @@ namespace SportMarket_Backend.Repositories.Images
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly SportMarketDBContext _dbContext;
-        private readonly IMapper _mapper;
         private readonly string _folderName = "Images";
 
-        public LocalImageRepository(IWebHostEnvironment webHostEnvironment, IHttpContextAccessor httpContextAccessor, SportMarketDBContext dbContext, IMapper mapper)
+        public LocalImageRepository(IWebHostEnvironment webHostEnvironment, IHttpContextAccessor httpContextAccessor, SportMarketDBContext dbContext)
         {
             _webHostEnvironment = webHostEnvironment;
             _httpContextAccessor = httpContextAccessor;
             _dbContext = dbContext;
-            _mapper = mapper;
         }
         public async Task<Image> Upload(Image image)
         {
-            //var user = await _dbContext.Users.FirstOrDefaultAsync(i => i.Username == image.FileUsername);
+            var userFolderPath = Path.Combine(_webHostEnvironment.ContentRootPath, _folderName, image.FileUsername);
 
-            //if (user == null)
-            //{
-            //    throw new Exception("User not found.");
-            //}
+            if (!Directory.Exists(userFolderPath))
+            {
+                Directory.CreateDirectory(userFolderPath);
+            }
 
-            //var userFolderPath = Path.Combine(_webHostEnvironment.ContentRootPath, _folderName, username.Username);
+            var localFilePath = Path.Combine(userFolderPath, $"{image.FileName}{image.FileExtension}");
 
-            //if (!Directory.Exists(userFolderPath))
-            //{
-            //    Directory.CreateDirectory(userFolderPath);
-            //}
-
-            //var localFilePath = Path.Combine(userFolderPath, $"{image.FileName}{image.FileExtension}");
-
-            //using var stream = new FileStream(localFilePath, FileMode.Create);
-            //await image.File.CopyToAsync(stream);
-
-            var localFilePath = Path.Combine(
-               _webHostEnvironment.ContentRootPath,
-               _folderName,
-               $"{image.FileName}{image.FileExtension}"
-               );
-
-            // upload image to local path
             using var stream = new FileStream(localFilePath, FileMode.Create);
             await image.File.CopyToAsync(stream);
 
-            var urlFilePath = $"{_httpContextAccessor.HttpContext.Request.Scheme}://{_httpContextAccessor.HttpContext.Request.Host}{_httpContextAccessor.HttpContext.Request.PathBase}/{_folderName}/{image.FileName}{image.FileExtension}";
+            var urlFilePath = $"{_httpContextAccessor.HttpContext.Request.Scheme}://{_httpContextAccessor.HttpContext.Request.Host}{_httpContextAccessor.HttpContext.Request.PathBase}/{_folderName}/{image.FileUsername}/{image.FileName}{image.FileExtension}";
 
             image.FilePath = urlFilePath;
 

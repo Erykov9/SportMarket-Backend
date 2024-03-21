@@ -10,7 +10,6 @@ namespace SportMarket_Backend.Models.DTO
         [Required]
         public string FileName { get; set; }
         public string? FileDescription { get; set; }
-        public string FileUsername { get; set; }
         public Guid ProductId { get; set; }
     }
 }

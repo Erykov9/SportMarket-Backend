@@ -53,7 +53,7 @@ namespace SportMarket_Backend.Repositories.Products
             int pageNumber = 1, int pageSize = 10)
         {
 
-            var products = _dBContext.Products.Include(x => x.Category).Include(x => x.User).AsQueryable();
+            var products = _dBContext.Products.Include(x => x.Category).Include(x => x.User).Include(x => x.Images).AsQueryable();
 
             if(!string.IsNullOrWhiteSpace(filterCategory))
             {
@@ -110,7 +110,7 @@ namespace SportMarket_Backend.Repositories.Products
 
         public async Task<Product> GetByIdAsync(Guid id)
         {
-            var product = await _dBContext.Products.Include(x => x.Category).Include(x => x.User).FirstOrDefaultAsync(p => p.Id == id);
+            var product = await _dBContext.Products.Include(x => x.Category).Include(x => x.User).Include(x => x.Images).FirstOrDefaultAsync(p => p.Id == id);
 
             if (product == null) 
             {
