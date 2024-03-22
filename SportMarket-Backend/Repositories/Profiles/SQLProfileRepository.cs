@@ -13,7 +13,7 @@ namespace SportMarket_Backend.Repositories.Profiles
             _dbContext = dbContext;
         }
 
-        public async Task<User> GetUserByIdAsync(Guid id)
+        public async Task<User?> GetUserByIdAsync(Guid id)
         {
             var user = await _dbContext.Users.Include(u => u.Products).FirstOrDefaultAsync(x => x.Id == id);
             

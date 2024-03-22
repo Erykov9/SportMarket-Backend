@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SportMarket_Backend.Data;
@@ -83,6 +84,17 @@ namespace SportMarket_Backend.Controllers
                     {
                         var jwtToken = _tokenRepository.CreateJWTToken(user, roles.ToList());
 
+                        var cookieOptions = new CookieOptions
+                        {
+                            Path = "/",
+                            HttpOnly = true,
+                            Secure = true,
+                            SameSite = SameSiteMode.None,
+                            Expires = DateTime.UtcNow.AddDays(7)
+                        };
+
+                        Response.Cookies.Append("AT", jwtToken, cookieOptions);
+
                         var response = new LoginResponseDTO
                         {
                             JwtToken = jwtToken
@@ -91,9 +103,27 @@ namespace SportMarket_Backend.Controllers
                         return Ok(response);
                     }
                 }
+
+                return NotFound(new { error = "Username or password are incorect." });
             }
 
-            return BadRequest("Login or password was incorrect.");
+            return NotFound(new { error = "Username or password are incorect."});
+        }
+
+        [HttpPost]
+        [Route("Logout")]
+        public IActionResult Logout()
+        {
+            Response.Cookies.Delete("AT");
+            return Ok("You have been logged out successfully.");
+        }
+
+        [HttpGet]
+        [Route("IsLogged")]
+        [Authorize]
+        public IActionResult IsLogged()
+        {
+            return Ok(true);
         }
     }
 }

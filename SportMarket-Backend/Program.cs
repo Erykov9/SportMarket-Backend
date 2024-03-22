@@ -28,7 +28,13 @@ builder.Logging.AddSerilog(logger);
 
 builder.Services.AddCors(opt =>
 {
-    opt.AddPolicy("AllowSpecificOrigin", builder => builder.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod());
+    opt.AddPolicy("AllowSpecificOrigin", builder => builder.WithOrigins("https://sportmarket.local:3000").AllowAnyHeader().AllowAnyMethod().AllowCredentials());
+});
+
+builder.Services.Configure<CookiePolicyOptions>(options =>
+{
+    options.CheckConsentNeeded = context => true;
+    options.MinimumSameSitePolicy = SameSiteMode.None;
 });
 
 builder.Services.AddControllers();
@@ -68,17 +74,29 @@ builder.Services.Configure<IdentityOptions>(opt =>
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(opt =>
-    opt.TokenValidationParameters = new TokenValidationParameters
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration["Jwt:Issuer"],
-        ValidAudience = builder.Configuration["Jwt:Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(
-            Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+        opt.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
+        };
+        opt.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = context =>
+            {
+                context.Token = context.Request.Cookies["AT"];
+                return Task.CompletedTask;
+            }
+        };
     });
+      
+    
 
 var app = builder.Build();
 

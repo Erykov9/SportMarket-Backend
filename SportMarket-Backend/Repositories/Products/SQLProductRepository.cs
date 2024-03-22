@@ -15,7 +15,7 @@ namespace SportMarket_Backend.Repositories.Products
             _dBContext = dBContext;
         }
 
-        public async Task<Product> CreateAsync(Product product, IdentityUser user)
+        public async Task<Product?> CreateAsync(Product product, IdentityUser user)
         {
             var userToFind = Guid.Parse(user.Id);
             var userToInclude = await _dBContext.Users.FirstOrDefaultAsync(x => x.UserId == userToFind);

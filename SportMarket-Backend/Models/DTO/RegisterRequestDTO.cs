@@ -5,6 +5,8 @@ namespace SportMarket_Backend.Models.DTO
     public class RegisterRequestDTO
     {
         [Required]
+        [MinLength(4)]
+        [MaxLength(18)]
         public string Username { get; set; }
 
         [Required]

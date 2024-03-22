@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SportMarket_Backend.Models.DTO;
@@ -21,7 +22,8 @@ namespace SportMarket_Backend.Controllers
 
         [HttpGet]
         [Route("{id:guid}")]
-        public async Task<IActionResult> GetUserById([FromRoute] Guid id)
+        [Authorize]
+        public async Task<IActionResult?> GetUserById([FromRoute] Guid id)
         {
             var domainProfile = await _profileRepository.GetUserByIdAsync(id);
 
@@ -34,5 +36,6 @@ namespace SportMarket_Backend.Controllers
 
             return Ok(profileDTO);
         }
+
     }
 }
