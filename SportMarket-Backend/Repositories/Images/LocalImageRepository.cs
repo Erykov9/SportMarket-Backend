@@ -42,5 +42,28 @@ namespace SportMarket_Backend.Repositories.Images
 
             return image;
         }
+
+        public async Task<Image?> DeleteImage(Guid id)
+        {
+            var image = await _dbContext.Images.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (image == null)
+            {
+                return null;
+            }
+
+            var userFolderPath = Path.Combine(_webHostEnvironment.ContentRootPath, _folderName, image.FileUsername);
+            var localFilePath = Path.Combine(userFolderPath, $"{image.FileName}{image.FileExtension}");
+
+            if (File.Exists(localFilePath))
+            {
+                File.Delete(localFilePath);
+            }
+
+            _dbContext.Images.Remove(image);
+            await _dbContext.SaveChangesAsync();
+            return image;
+
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -26,6 +27,7 @@ namespace SportMarket_Backend.Controllers
 
         [HttpPost]
         [Route("Upload")]
+        [Authorize]
         public async Task<IActionResult> Upload([FromForm] AddImageRequestDTO request)
         {
             ValidateFileUpload(request);
@@ -42,13 +44,14 @@ namespace SportMarket_Backend.Controllers
                     return NotFound("User doesn't exists.");
                 }
 
+                var fileName = Guid.NewGuid();
+
                 var imageDomainModel = new Image
                 {
                     File = request.File,
                     FileExtension = Path.GetExtension(request.File.FileName),
                     FileSizeInBytes = request.File.Length,
-                    FileName = request.FileName,
-                    FileDescription = request.FileDescription,
+                    FileName = fileName.ToString(),
                     FileUsername = userToInclude.Username,
                     ProductId = Guid.Parse($"{request.ProductId}"),
                 };
@@ -59,6 +62,21 @@ namespace SportMarket_Backend.Controllers
             }
 
             return BadRequest(ModelState);
+        }
+
+        [HttpDelete]
+        [Route("Delete/{id:guid}")]
+        [Authorize]
+        public async Task<IActionResult> DeleteImage([FromRoute] Guid id)
+        {
+            var isDeletedImage = await _imageRepository.DeleteImage(id);
+
+            if (isDeletedImage != null)
+            {
+                return Ok(isDeletedImage);
+            }
+
+            return NotFound();
         }
 
         private void ValidateFileUpload(AddImageRequestDTO request)
