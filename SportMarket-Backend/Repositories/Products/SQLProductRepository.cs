@@ -108,7 +108,7 @@ namespace SportMarket_Backend.Repositories.Products
             return result;
         }
 
-        public async Task<Product> GetByIdAsync(Guid id)
+        public async Task<Product?> GetByIdAsync(Guid id)
         {
             var product = await _dBContext.Products.Include(x => x.Category).Include(x => x.User).Include(x => x.Images).FirstOrDefaultAsync(p => p.Id == id);
 
@@ -132,6 +132,7 @@ namespace SportMarket_Backend.Repositories.Products
             existingProduct.ProductDescription = product.ProductDescription;
             existingProduct.ProductPrice = product.ProductPrice;
             existingProduct.CategoryId = product.CategoryId;
+            existingProduct.Location = product.Location;
 
             await _dBContext.SaveChangesAsync();
             return existingProduct;

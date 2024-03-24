@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SportMarket_Backend.Models.Domain;
 using SportMarket_Backend.Models.DTO;
 using SportMarket_Backend.Repositories.Categories;
 
@@ -23,7 +24,7 @@ namespace SportMarket_Backend.Controllers
         public async Task<IActionResult> GetAll()
         {
             var categoriesDomain = await _categoryRepository.GetAllAsync();
-            var categoriesDTO = _mapper.Map<List<CategoryDTO>>(categoriesDomain);
+            var categoriesDTO = _mapper.Map<List<Category>>(categoriesDomain);
    
             return Ok(categoriesDTO);
         }

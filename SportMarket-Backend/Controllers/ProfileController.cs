@@ -21,11 +21,11 @@ namespace SportMarket_Backend.Controllers
         }
 
         [HttpGet]
-        [Route("{id:guid}")]
+        [Route("{username}")]
         [Authorize]
-        public async Task<IActionResult?> GetUserById([FromRoute] Guid id)
+        public async Task<IActionResult?> GetUserByUsername([FromRoute] string username)
         {
-            var domainProfile = await _profileRepository.GetUserByIdAsync(id);
+            var domainProfile = await _profileRepository.GetUserByUsernameAsync(username);
 
             if (domainProfile == null)
             {

@@ -6,6 +6,7 @@ using SportMarket_Backend.Data;
 using SportMarket_Backend.Models.Domain;
 using SportMarket_Backend.Models.DTO;
 using SportMarket_Backend.Repositories.Auth;
+using System.IdentityModel.Tokens.Jwt;
 using System.Text.Json;
 
 namespace SportMarket_Backend.Controllers
@@ -114,7 +115,16 @@ namespace SportMarket_Backend.Controllers
         [Route("Logout")]
         public IActionResult Logout()
         {
-            Response.Cookies.Delete("AT");
+            var cookieOptions = new CookieOptions
+            {
+                Path = "/",
+                HttpOnly = true,
+                Secure = true,
+                SameSite = SameSiteMode.None,
+                Expires = DateTime.UtcNow.AddDays(-1)
+            };
+
+            Response.Cookies.Delete("AT", cookieOptions);
             return Ok("You have been logged out successfully.");
         }
 
@@ -123,6 +133,29 @@ namespace SportMarket_Backend.Controllers
         [Authorize]
         public IActionResult IsLogged()
         {
+            var cookieValue = Request.Cookies["AT"];
+            if(cookieValue != null)
+            {
+                var handler = new JwtSecurityTokenHandler();
+                var jwt = handler.ReadToken(cookieValue) as JwtSecurityToken;
+
+                if (jwt != null)
+                {
+                    foreach (var token in jwt.Claims)
+                    {
+                        var tokenClaim = token.Type.Split("/")[token.Type.Split("/").Length - 1];
+
+                        if(tokenClaim == "name")
+                        {
+                            return Ok(new
+                            {
+                                data = true,
+                                username = token.Value,
+                            });
+                        }
+                    }
+                }
+            }
             return Ok(true);
         }
     }
