@@ -11,6 +11,7 @@ using SportMarket_Backend.Repositories.Categories;
 using SportMarket_Backend.Repositories.Images;
 using SportMarket_Backend.Repositories.Products;
 using SportMarket_Backend.Repositories.Profiles;
+using SportMarket_Backend.Repositories.Purchases;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -53,6 +54,7 @@ builder.Services.AddScoped<IImageRepository, LocalImageRepository>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddScoped<IProfileRepository, SQLProfileRepository>();
 builder.Services.AddScoped<ICategoryRepository, SQLCategoryRepository>();
+builder.Services.AddScoped<IPurchaseRepository, SQLPurchaseRepository>();
 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 

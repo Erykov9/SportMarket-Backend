@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SportMarket_Backend.Data;
 using SportMarket_Backend.Models.Domain;
 using SportMarket_Backend.Models.DTO;

@@ -17,6 +17,8 @@ namespace SportMarket_Backend.Mappings
             CreateMap<User, ProfileDTO>().ReverseMap();
 
             CreateMap<Category, CategoryDTO>().ReverseMap();
+
+            CreateMap<AddPurchaseRequestDTO, Purchase>().ReverseMap();
         }
     }
 }

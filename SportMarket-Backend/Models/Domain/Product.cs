@@ -16,7 +16,6 @@ namespace SportMarket_Backend.Models.Domain
         [JsonIgnore]
         public User User { get; set; }
         public Guid UserId { get; set; }
-
         public ICollection<Image> Images { get; } = new List<Image>();
 
     }

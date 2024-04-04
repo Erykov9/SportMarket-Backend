@@ -90,6 +90,7 @@ namespace SportMarket_Backend.Controllers
 
         [HttpDelete]
         [Route("{id:guid}")]
+        [Authorize]
         public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
             var deletedProductDomain = await _productRepository.DeleteAsync(id);
@@ -104,6 +105,7 @@ namespace SportMarket_Backend.Controllers
 
         [HttpPut]
         [Route("{id:guid}")]
+        [Authorize]
         public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateProductRequestDTO updateProductRequestDTO)
         {
             var productDomainModel = _mapper.Map<Product>(updateProductRequestDTO);
